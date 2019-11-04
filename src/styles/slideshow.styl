@@ -1,0 +1,73 @@
+@require './functions.styl'
+
+body
+  .prev
+    cursor url('/images/cursor_prev.png'), move
+
+  .next
+    cursor url('/images/cursor_next.png'), move
+
+  img.dark
+    display none
+
+  &.dark
+    color white
+
+    .prev
+      cursor url('/images/cursor_prev-dark.png'), move
+
+    .next
+      cursor url('/images/cursor_next-dark.png'), move
+
+    .close img.dark
+      display block
+
+    .close img:not(.dark)
+      display none
+
+  .slideshow
+    Fixed()
+
+  .slide
+    min-height 800px
+    Absolute()
+    Animation(fade, 1.5s)
+    background-size cover
+    background-position center
+    display none
+
+    .caption
+      font-size 13px
+      text-transform uppercase
+      letter-spacing 1px
+      position absolute
+      bottom 25px
+      left 25px
+
+  .controls > div
+    width 50%
+    position absolute
+    top 75px
+    bottom 75px
+    transition 0.4s ease
+    user-select none
+    &.prev
+      left 0
+    &.next
+      right 0
+
+  @-webkit-keyframes fade {
+    from {
+      opacity .4
+    } to {
+      opacity 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity .4
+    } to {
+      opacity 1
+    }
+  }

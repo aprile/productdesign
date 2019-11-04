@@ -1,0 +1,27 @@
+{
+  "name": "productdesign",
+  "version": "1.0.0",
+  "description": "Product Design Portfolio",
+  "dependencies": {
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "stylus": "^0.54.5",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "private": true,
+  "scripts": {
+    "start": "npm run watch:stylus & npm run watch:pug & webpack -w & http-server ./static",
+    "watch:stylus": "stylus --watch ./src/styles/index.styl -o ./static/css/index.css",
+    "watch:pug": "pug --watch ./src/pages/ -o ./static/",
+    "build": "npm run build:stylus && npm run build:pug && webpack",
+    "build:stylus": "stylus ./src/styles/index.styl -o ./static/css",
+    "build:pug": "pug ./src/pages/ -o ./static/",
+    "deploy": "npm run build && npm run bucket:sync && npm run bucket:invalidate",
+    "bucket:sync": "aws s3 sync --profile aprileelcich static s3://aprileelcich --delete",
+    "bucket:invalidate": "aws cloudfront create-invalidation --profile aprileelcich --distribution-id E3K5KSVV0IGGS8 --paths '/*'"
+  },
+  "author": "aprileelcich",
+  "license": "UNLICENSED"
+}
