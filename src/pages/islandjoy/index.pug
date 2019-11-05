@@ -1,0 +1,111 @@
+include ../../mixins/head
+include ../../mixins/header
+include ../../mixins/footer
+
++Head('Island Joy')
+
+body#islandjoy
+  +Header('Island Joy')
+  
+  main
+    section.grid-min
+      .intro
+        p Packaging for Island Joy’s line of handcrafted sugar scrubs. Inspired by the essence of the Caribbean and our clients' Jamaican-Antiguan heritage, Island Joy’s scrubs are made in small batches using natural &amp; organic ingredients, and infused with exotic scents of the tropics.
+
+    section.grid-max
+      img(src="/images/islandjoy-1.png")
+    
+    section.grid-med
+      .flex
+        .caption
+          span.num a.
+          span Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        p Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+  
+    hr
+
+    section.grid-min
+      h2 Colour
+      p The primary colours (top row) are used for the main application styles, and the secondary colours (bottom row) are optional accent colours. Only one accent colour is used at a time, as a complement to the minimalist tones of the primary scheme.
+    
+    section.grid-med
+      .swatchset
+        .swatch.purple
+          span
+          //- ul
+          //-   li C0 M0 Y0 K0
+          //-   li rgb(255, 255, 255)
+          //-   li #5e3755
+        .swatch.lilac
+          span
+        .swatch.coral
+          span
+        .swatch.pink
+          span
+        .swatch.green
+          span
+        .swatch.seafoam
+          span
+        .swatch.yellow
+          span
+        .swatch.brightyellow
+          span
+    
+    section.grid-min
+      p The primary colours (top row) are used for the main application styles, and the secondary colours (bottom row) are optional accent colours. Only one accent colour is used at a time, as a complement to the minimalist tones of the primary scheme.
+    
+    section.grid-med
+      img(src="/images/islandjoy-9.png")
+        
+    hr
+
+    section.grid-min
+      h2 Typography
+      p The primary colours (top row) are used for the main application styles, and the secondary colours (bottom row) are optional accent colours. Only one accent colour is used at a time, as a complement to the minimalist tones of the primary scheme.
+    
+    section.grid-max
+      .grid-image-thirds.flex
+        div
+          img(src="/images/btq-lt.svg")
+          span Boutique Light
+        div
+          img(src="/images/gt-pressura.svg")
+          span GT Pressura
+        div
+          img(src="/images/harriet.svg")
+          span Harriet Text
+    
+    hr 
+
+    section.grid-med
+      img(src="/images/islandjoy-6.png")
+    
+    .spacer
+
+    section.grid-max
+      .grid-image-thirds.flex
+        div
+          img(src="/images/islandjoy-3.png")
+        div
+          img(src="/images/islandjoy-5.png")
+        div
+          img(src="/images/islandjoy-8.png")            
+        
+    section.grid-min
+      p Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    
+    section.grid-med
+      img(src="/images/islandjoy-7.png")
+      img(src="/images/islandjoy-10.png")
+    
+    hr
+
+    section.grid-min
+      h2 Credits
+      p Client &mdash; Island Joy,
+        |  Graphic Design &mdash; Petra Cuschieri,
+        |  Creative Direction &mdash; Aprile Elcich,
+        |  Web Design &amp; Development &mdash; Aprile Elcich,
+        |  Photography &mdash; Lunch Money Studios
+    
+  +Footer('Data Terra Nemo', '/dataterranemo', 'Vintage Type', '/vintagetype')

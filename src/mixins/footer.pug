@@ -1,2 +1,12 @@
-mixin Footer()
-  script(src="/main.js")
+mixin Footer(prev, prevurl, next, nexturl)
+  
+  footer
+    .bottom-left 
+      span &larr;&nbsp;&nbsp;
+      a(href= prevurl)
+        span= prev
+
+    .bottom-right
+      a(href= nexturl)
+        span= next
+      span &nbsp;&nbsp;&rarr;

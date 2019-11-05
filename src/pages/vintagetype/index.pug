@@ -1,0 +1,24 @@
+include ../../mixins/head
+include ../../mixins/header
+include ../../mixins/footer
+
++Head('Vintage Type')
+
+body#vintagetype
+  +Header('Vintage Type')
+  
+  main
+    section.grid-min
+      .intro
+        p I have always been a fan of more is more, and there is something captivating about the way we used to arrange our type, sometimes bordering on incoherent and disorderly — but undeniably beautiful.
+
+    section.grid-max
+      img(src="/images/vt-1.png")
+        
+    section.grid-min
+      p For this self-initiated project, I wanted to experiment with web typography based on vintage type samples — advertisements, packaging, matchbooks, postcards, etc — and freshly illustrate them for the web.
+  
+    hr
+
+    
+  +Footer('Island Joy', '/islandjoy', 'Petal & Leaf', '/petalandleaf')

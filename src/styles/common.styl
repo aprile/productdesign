@@ -1,0 +1,178 @@
+@require './variables.styl'
+@require './functions.styl'
+
+*
+  box-sizing border-box
+
+body
+  margin 0
+  padding 0
+  font-family var(--primary)
+
+  a
+    color inherit
+    text-decoration none
+    &:hover
+      text-decoration underline
+
+  h1, h2
+    font-weight normal
+
+  h2
+    font bold 2.75em/1.35em var(--primary)
+    text-decoration underline
+    padding 0 30px
+    margin 0
+    @media $desktop-large
+      padding 0
+      padding-top 30px
+
+  p
+    color var(--text)
+    font 1.2em/1.45em var(--body)
+    margin 30px 0 50px 0
+    padding 0 30px
+    @media $desktop-large
+      padding 0
+
+  hr
+    width 100%
+    margin 50px 0
+    border 0
+    border-top 1px solid #eaeaea
+
+  main
+    margin-top 75px
+    display flex
+    flex-direction column
+    align-items center
+    padding-bottom 100px
+
+  img
+    max-width 100%
+    display block
+    margin 0 auto
+
+  .spacer
+    width 100%
+    height 50px
+
+  /* Captions */
+  .caption ul
+    list-style none
+    padding 0
+    margin 0
+    margin-bottom 10px
+    li:first-of-type
+      text-decoration underline
+
+  .flex
+    display flex
+
+  .between
+    justify-content space-between
+
+  .flex .caption
+    color var(--accent)
+    margin 50px 0 50px -25px
+    display flex
+    flex-basis 30%
+    > .num
+      margin-right 15px
+
+  .flex p
+    flex-basis 60%
+
+  blockquote
+    border-top 1px solid var(--border)
+    border-bottom 1px solid var(--border)
+    padding-top 20px
+    position relative
+    span
+      color var(--text)
+      text-align right
+      padding 10px 20px
+      display block
+      CenterX()
+      bottom -18px
+      background-color white
+
+  .intro, blockquote
+    margin-bottom 90px
+    margin-top 80px
+    p
+      color var(--accent)
+      font 1.5em/1.45em var(--secondary)
+      padding 0 30px
+      @media $desktop-large
+        font 1.75em/1.45em var(--secondary)
+        padding 0
+
+  /* Grid */
+  .grid-min
+    width 100%
+    max-width 800px
+    @media $desktop-large
+      width 46%
+    @media $desktop
+      width 70%
+    @media $tablet
+      width 80%
+
+  .grid-med
+    width 100%
+    @media $desktop-large
+      width 70%
+      max-width 1300px
+
+  .grid-max
+    width 100%
+    position relative
+
+  .grid-image-thirds
+    margin 30px 0 50px 0
+    text-align center
+    img
+      width 33.3333vw
+      transition transform 0.2s ease
+      &:hover
+        Scale(1.1)
+
+  /* Navigation */
+  header,
+  footer
+    height 75px
+    padding 24px
+    position fixed
+    left 0
+    right 0
+    display flex
+    z-index 10
+
+  &:not(#index) header
+    background-color white
+    box-shadow 10px 10px 14px 0px rgba(0,0,0,0.05)
+
+  header
+    top 0
+
+    > div:nth-of-type(odd)
+      margin-top 3px
+      flex-basis 25%
+
+    > div:nth-of-type(2)
+      flex-basis 50%
+      text-align center
+      font-size 1.2em
+      letter-spacing 1px
+      text-transform uppercase
+
+    > div:last-of-type
+      text-align right
+
+  footer
+    bottom 0
+    > div
+      flex-basis 50%
+      &:last-of-type
+        text-align right

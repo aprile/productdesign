@@ -1,0 +1,42 @@
+include ../../mixins/head
+include ../../mixins/header
+include ../../mixins/footer
+
++Head('Data Terra Nemo')
+
+body#dtn
+  +Header('Data Terra Nemo')
+
+  main
+    section.grid-min
+      .intro
+        p A technical conference for hackers &amp; computer scientists focused on distributed and decentralized systems. The brand was designed with the venue in consideration, a beautiful 1950s-era recording studio in a former state radio broadcast centre in Berlin.
+
+    section.grid-max
+      img(src="/images/dtn-1.png")
+    
+    section.grid-med
+      .flex
+        .caption
+          span.num a.
+          span Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        p Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+      img(src="/images/dtn-2.png")
+            
+      .flex
+        .caption
+          span.num b.
+          span Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        
+    section.grid-min
+      p Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    
+    section.grid-max
+      img(src="/images/dtn-3.png")        
+      img(src="/images/dtn-4.png")
+      img(src="/images/dtn-5.png")
+      img(src="/images/dtn-6.png")
+      img(src="/images/dtn-7.png")
+
+  +Footer('Voltra', '/voltra', 'Island Joy', '/islandjoy')

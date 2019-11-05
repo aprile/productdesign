@@ -1,0 +1,21 @@
+include ../../mixins/head
+include ../../mixins/header
+include ../../mixins/footer
+
++Head('Tonic')
+
+body#tonic
+  +Header('Tonic')
+  
+  main
+    section.grid-min
+      .intro
+        p Tonic is a minimalist, stable component framework. A collaborative project where I designed and developed the brand, documentation, and the Tonic UI components, complete with customizable options as well as keyboard accessibility.
+
+    section.grid-max
+      img(src="/images/tonic.png")
+  
+    hr
+
+    
+  +Footer('Voltra Music Server', '/vms', 'Maison Apothecare', '/maisonapothecare')

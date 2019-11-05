@@ -1,0 +1,55 @@
+include ../../mixins/head
+include ../../mixins/header
+include ../../mixins/footer
+
++Head('Wonder 4 Grams')
+
+body#wonder4grams
+  +Header('Wonder 4 Grams')
+  
+  main
+    section.grid-min
+      .intro
+        p Wonder 4 Grams is a private chef service that provides individuals or organisations, in the comfort of home or at specials locations, unique food experiences. The brand reflects chef Audrey's style of modern french cuisine driven by curiosity.
+
+    section.grid-max
+      img(src="/images/w4g-5.png")
+        
+    section.grid-min
+      .spacer
+      img(src="/images/w4g-1.png")
+      .spacer
+      h2 Logo
+      p Lorem ipsum...
+
+    section.grid-max
+      img(src="/images/w4g-8.png")
+
+    section.grid-min
+      .spacer
+      h2 Business Cards
+      p Lorem ipsum
+    
+    section.grid-max
+      img(src="/images/w4g-3.png")
+
+    section.grid-min
+      .spacer
+      h2 Photography
+      p Lorem ipsum...
+    
+    section.grid-max
+      img(src="/images/w4g-7.png")
+      
+    section.grid-min
+      .spacer
+      h2 Website
+      p Lorem ipsum
+      
+    section.grid-med
+      img(src="/images/w4g-2.png")
+      img(src="/images/w4g-6.png")
+      img(src="/images/w4g-4.png")
+      .spacer
+    
+  +Footer('Maison Apothecare', '/maisonapothecare', 'Index', '/')

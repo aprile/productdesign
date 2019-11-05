@@ -1,0 +1,21 @@
+include ../../mixins/head
+include ../../mixins/header
+include ../../mixins/footer
+
++Head('Voltra Music Server')
+
+body#vms
+  +Header('Voltra Music Server')
+  
+  main
+    section.grid-max
+      img(src="/images/voltra-1.png")
+    
+    section.grid-min
+      .intro
+        p Petal &amp; Leaf Holistic Aromatics is a natural line of perfumes formulated by french perfumers, each natural scent beautifully and carefully crafted. Inspired by the line, we created an identity and packaging to reflect the organic nature and intricacies of the product.
+  
+    hr
+
+    
+  +Footer('ConductorLab', '/conductorlab', 'Tonic', '/tonic')

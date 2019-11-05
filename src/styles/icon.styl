@@ -1,0 +1,36 @@
+.iconset
+  background-color #1d1e22
+  display flex
+  flex-wrap wrap
+  align-items flex-start
+  padding 100px
+
+.icon
+  padding 55px 45px 35px 45px
+  margin 0
+  display inline-block
+  position relative
+  border 1px solid transparent
+  &:hover > span
+    visibility visible
+  &:hover
+    // background-color white
+    border 1px solid var(--border)
+    z-index 1
+    Scale(1.5)
+
+  span
+    color white
+    width 100%
+    text-transform uppercase
+    letter-spacing 1px
+    font-size 8px
+    text-align center
+    padding 5px
+    display block
+    CenterX()
+    top 10px
+    visibility hidden
+
+  svg
+    Icon(30px, white)
