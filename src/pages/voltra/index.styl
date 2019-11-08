@@ -1,14 +1,22 @@
 body#voltra
+  --accent var(--red)
 
-  .intro
+  .intro p
     color var(--darkgray)
-    font 1.75em/1.45em var(--primary)
 
   .brand-guide
     display flex
+    flex-wrap wrap
     margin 50px 0
+    justify-content space-between
+
     > div
-      padding 20px
+      flex-basis 46%
+      padding-bottom 8%
+      transition transform 0.2s ease
+      &:hover
+        Scale(1.1)
+
     img
       border 1px solid var(--border)
 
@@ -54,11 +62,10 @@ body#voltra
 
     .one
       left 0
-      &:hover
-        ~ .two, ~ .three
-          -webkit-transform translateX(50%)
-          -ms-transform translateX(50%)
-          transform translateX(50%)
+      &:hover ~ .two, ~ .three
+        -webkit-transform translateX(50%)
+        -ms-transform translateX(50%)
+        transform translateX(50%)
 
     .two, .three
       border-left 1px solid white
@@ -67,11 +74,10 @@ body#voltra
     .two
       left 25%
       z-index 2
-      &:hover
-        ~ .three
-          -webkit-transform translateX(50%)
-          -ms-transform translateX(50%)
-          transform translateX(50%)
+      &:hover ~ .three
+        -webkit-transform translateX(50%)
+        -ms-transform translateX(50%)
+        transform translateX(50%)
 
     .three
       left 50%
@@ -81,8 +87,10 @@ body#voltra
       height 80vh
       width 60vw
       position relative
+
       @media $mobile-portrait
         height 33.3333vh
+
       @media $tablet-portrait
         height 33.3333vh
 
