@@ -1,6 +1,16 @@
 body#dtn
   --accent #c08a39
 
+  .view-site
+    margin-top 30px
+    a
+      color var(--accent)
+      font bold 20px var(--mono)
+      text-decoration underline
+      cursor url('/images/cursor-dtn.png'), pointer
+      &:hover
+        text-decoration none
+
   .intro
     &.left
       background-image url('/images/dtn-0.jpg')
@@ -21,7 +31,7 @@ body#dtn
       margin 0 auto
 
   section.image-box
-    background-color white
+    background-color var(--accent)
     padding 100px 50px
     img
       width 80%

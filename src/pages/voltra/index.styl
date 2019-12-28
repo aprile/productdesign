@@ -6,7 +6,7 @@ body#voltra
       background-image url('/images/voltra-3-port.png')
 
     &.right
-      background-color #ed4224
+      background-color var(--red)
 
   section.copy
     padding 100px 0
@@ -15,6 +15,56 @@ body#voltra
       margin 0 auto
     &.lightgray
       background-color #f8f8f8
+
+  section.image-box
+    background-color var(--accent)
+    padding 100px 50px
+    &.dark
+      background-color #1e1f22
+    img
+      width 80%
+      margin 0 auto
+      display block
+
+  .colour-grid > *
+    flex-basis 20%
+    height 20vw
+    padding 50px
+    font-family 'Overpass Mono', monospace
+    letter-spacing 1px
+    font-size 14px
+
+  .white
+    background-color white
+
+  .lightgray
+    background-color var(--lightgray)
+
+  .mediumgray
+    background-color var(--mediumgray)
+
+  .darkgray
+    color white
+    background-color var(--darkgray)
+
+  .black
+    color white
+    background-color var(--black)
+
+  .gold
+    background-color var(--gold)
+
+  .red
+    background-color var(--red)
+
+  .purple
+    background-color var(--purple)
+
+  .blue
+    background-color var(--blue)
+
+  .green
+    background-color var(--green)
 
 
   //
@@ -37,28 +87,7 @@ body#voltra
   //   img
   //     border 1px solid var(--border)
   //
-  // .swatchset
-  //   .swatch
-  //     &.white span
-  //       border 1px solid var(--border)
-  //     &.lightgray span
-  //       background var(--lightgray)
-  //     &.mediumgray span
-  //       background var(--mediumgray)
-  //     &.darkgray span
-  //       background var(--darkgray)
-  //     &.black span
-  //       background var(--black)
-  //     &.gold span
-  //       background var(--gold)
-  //     &.red span
-  //       background var(--red)
-  //     &.purple span
-  //       background var(--purple)
-  //     &.blue span
-  //       background var(--blue)
-  //     &.green span
-  //       background var(--green)
+
   //
   // .typography
   //   color white

@@ -17,6 +17,12 @@ body
   h1, h2, h3
     font-weight normal
 
+  h2
+    font bold 22px var(--secondary)
+    text-transform uppercase
+    letter-spacing 1px
+    margin-bottom 30px
+
   p
     font-weight 300
     font-size 32px
@@ -48,7 +54,7 @@ body
     top 0
     left 0
     right 0
-    border-bottom 2px solid black
+    border-bottom 1px solid black
     > *
       flex-basis 33.3333%
 
@@ -108,6 +114,14 @@ body
         font-family var(--mono)
         font-size 14px
 
+  section.image-small
+    padding 150px 0
+
+  .caption
+    margin-top 20px
+    font-family var(--mono)
+    font-size 12px
+
   .credits
     font-family var(--mono)
     padding 15px 30px
@@ -118,8 +132,8 @@ body
       margin 8px 0
 
   .page-footer
-    border-top 2px solid black
-    border-bottom 2px solid black
+    border-top 1px solid black
+    border-bottom 1px solid black
     .wrapper
       display flex
       > *
@@ -130,7 +144,7 @@ body
           text-transform uppercase
           letter-spacing 2px
         &:first-of-type
-          border-right 2px solid black
+          border-right 1px solid black
         &:last-of-type
           text-align right
     .bullet
