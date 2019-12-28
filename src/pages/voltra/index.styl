@@ -1,101 +1,118 @@
 body#voltra
   --accent var(--red)
 
-  .intro p
-    color var(--darkgray)
+  .intro
+    &.left
+      background-image url('/images/voltra-3-port.png')
 
-  .brand-guide
-    display flex
-    flex-wrap wrap
-    margin 50px 0
-    justify-content space-between
+    &.right
+      background-color #ed4224
 
-    > div
-      flex-basis 46%
-      padding-bottom 8%
-      transition transform 0.2s ease
-      &:hover
-        Scale(1.1)
+  section.copy
+    padding 100px 0
+    p
+      max-width 700px
+      margin 0 auto
+    &.lightgray
+      background-color #f8f8f8
 
-    img
-      border 1px solid var(--border)
 
-  .swatchset
-    .swatch
-      &.white span
-        border 1px solid var(--border)
-      &.lightgray span
-        background var(--lightgray)
-      &.mediumgray span
-        background var(--mediumgray)
-      &.darkgray span
-        background var(--darkgray)
-      &.black span
-        background var(--black)
-      &.gold span
-        background var(--gold)
-      &.red span
-        background var(--red)
-      &.purple span
-        background var(--purple)
-      &.blue span
-        background var(--blue)
-      &.green span
-        background var(--green)
-
-  .typography
-    color white
-    height 80vh
-    margin 60px 0
-    position relative
-    overflow hidden
-    img
-      height 100%
-
-    > div
-      position absolute
-      top 0
-      height 100%
-      overflow hidden
-      background-color #1e1f22
-      z-index 1
-
-    .one
-      left 0
-      &:hover ~ .two, ~ .three
-        -webkit-transform translateX(50%)
-        -ms-transform translateX(50%)
-        transform translateX(50%)
-
-    .two, .three
-      border-left 1px solid white
-      transition transform 0.2s ease
-
-    .two
-      left 25%
-      z-index 2
-      &:hover ~ .three
-        -webkit-transform translateX(50%)
-        -ms-transform translateX(50%)
-        transform translateX(50%)
-
-    .three
-      left 50%
-      z-index 3
-
-    .wrapper
-      height 80vh
-      width 60vw
-      position relative
-
-      @media $mobile-portrait
-        height 33.3333vh
-
-      @media $tablet-portrait
-        height 33.3333vh
-
-    span
-      position absolute
-      left 0
-      bottom 0
-      padding 30px 40px
+  //
+  // .intro p
+  //   color var(--darkgray)
+  //
+  // .brand-guide
+  //   display flex
+  //   flex-wrap wrap
+  //   margin 50px 0
+  //   justify-content space-between
+  //
+  //   > div
+  //     flex-basis 46%
+  //     padding-bottom 8%
+  //     transition transform 0.2s ease
+  //     &:hover
+  //       Scale(1.1)
+  //
+  //   img
+  //     border 1px solid var(--border)
+  //
+  // .swatchset
+  //   .swatch
+  //     &.white span
+  //       border 1px solid var(--border)
+  //     &.lightgray span
+  //       background var(--lightgray)
+  //     &.mediumgray span
+  //       background var(--mediumgray)
+  //     &.darkgray span
+  //       background var(--darkgray)
+  //     &.black span
+  //       background var(--black)
+  //     &.gold span
+  //       background var(--gold)
+  //     &.red span
+  //       background var(--red)
+  //     &.purple span
+  //       background var(--purple)
+  //     &.blue span
+  //       background var(--blue)
+  //     &.green span
+  //       background var(--green)
+  //
+  // .typography
+  //   color white
+  //   height 80vh
+  //   margin 60px 0
+  //   position relative
+  //   overflow hidden
+  //   img
+  //     height 100%
+  //
+  //   > div
+  //     position absolute
+  //     top 0
+  //     height 100%
+  //     overflow hidden
+  //     background-color #1e1f22
+  //     z-index 1
+  //
+  //   .one
+  //     left 0
+  //     &:hover ~ .two, ~ .three
+  //       -webkit-transform translateX(50%)
+  //       -ms-transform translateX(50%)
+  //       transform translateX(50%)
+  //
+  //   .two, .three
+  //     border-left 1px solid white
+  //     transition transform 0.2s ease
+  //
+  //   .two
+  //     left 25%
+  //     z-index 2
+  //     &:hover ~ .three
+  //       -webkit-transform translateX(50%)
+  //       -ms-transform translateX(50%)
+  //       transform translateX(50%)
+  //
+  //   .three
+  //     left 50%
+  //     z-index 3
+  //
+  //   .wrapper
+  //     height 80vh
+  //     width 60vw
+  //     position relative
+  //
+  //     @media $mobile-portrait
+  //       height 33.3333vh
+  //
+  //     @media $tablet-portrait
+  //       height 33.3333vh
+  //
+  //   span
+  //     position absolute
+  //     left 0
+  //     bottom 0
+  //     padding 30px 40px

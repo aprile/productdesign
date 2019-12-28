@@ -1,26 +1,81 @@
 body#islandjoy
   --accent #833c72
 
-  .intro p
-    color var(--accent)
+  .intro
+    &.left
+      background-image url('/images/islandjoy-10.png')
 
-  .swatchset
-    .swatch
-      flex-basis 25%
+    &.right
+      background-color #C5BACC
 
-      &.purple span
-        background #5e3755
-      &.yellow span
-        background #e3ac4c
-      &.pink span
-        background #e5b4a9
-      &.green span
-        background #b3ba63
-      &.coral span
-        background #ea9371
-      &.seafoam span
-        background #bcd1b1
-      &.brightyellow span
-        background #fedb39
-      &.lilac span
-        background #c8bccf
+  .font-grid
+    .flex-100
+      padding-bottom 50px
+
+    .flex-50
+      &:first-of-type
+        padding-right 30px
+      &:last-of-type
+        padding-left 30px
+
+  section.image-small
+    padding 150px 0
+
+  .caption
+    margin-top 20px
+    font-family var(--mono)
+    font-size 12px
+
+  section.image-thirds
+    > *
+      flex-basis 33.3333%
+      height 33.3333vw
+      background-size cover
+      background-position center
+      &.islandjoy-1
+        background-image url('/images/islandjoy-3.png')
+      &.islandjoy-2
+        background-image url('/images/islandjoy-5.png')
+      &.islandjoy-3
+        background-image url('/images/islandjoy-8.png')
+
+  section.image-box
+    background-color #FDDA4B
+    padding 100px 50px
+    img
+      width 80%
+      margin 0 auto
+      display block
+
+  .colour-grid > *
+    flex-basis 25%
+    height 25vw
+    padding 50px
+    font-family 'Overpass Mono', monospace
+    letter-spacing 1px
+    font-size 14px
+
+  .purple
+    color white
+    background-color #5E3855
+
+  .lilac
+    background-color #C8BDCF
+
+  .coral
+    background-color #E89375
+
+  .pink
+    background-color #E4B4AA
+
+  .green
+    background-color #B0B668
+
+  .seafoam
+    background-color #BDD1B2
+
+  .orange
+    background-color #E2AB55
+
+  .yellow
+    background-color #FDDA4B

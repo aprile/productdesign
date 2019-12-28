@@ -1,31 +1,105 @@
 body#index
 
-  .slide-1
-    background-image url('/images/voltra-9.gif')
+  header
+    padding: 100px 40px 60px 40px
+    background-color #191919
+    color white
+    cursor url('/images/cursor-white.png'), pointer
 
-  .slide-2
-    background-image url('/images/dtn-4.png')
+    a
+      font-size 12px
+      font-family var(--secondary)
+      text-transform uppercase
+      font-weight bold
+      letter-spacing 1px
+      text-decoration underline
+      display inline-block
+      margin-left 5px
 
-  .slide-3
-    background-image url('/images/islandjoy-4.png')
+    h1
+      font normal 38px/50px var(--primary)
+      max-width 450px
+      margin 20px 0
+      &:last-of-type
+        margin-top 100px
 
-  .slide-4
-    background-image url('/images/vt-1.png')
+  section
+    height 100vw
+    position relative
+    flex-basis 100%
+    z-index 0
+    @media $desktop
+      height 450px
+      flex-basis 50%
+    @media $tablet
+      height 450px
+      flex-basis 50%
 
-  .slide-5
-    background-image url('/images/petalandleaf-2.png')
+    a
+      padding 25px
+      Absolute(0)
+      cursor url('/images/cursor-black.png'), pointer
+      @media $desktop
+        padding 40px
 
-  .slide-6
-    background-image url('/images/cl.png')
+    h1
+      max-width 575px
+      color #191919
+      font 600 75px/75px var(--secondary)
+      text-transform uppercase
+      letter-spacing 2px
+      margin 0
+      word-break break-all
+      @media $desktop
+        font 600 85px/85px var(--secondary)
 
-  .slide-7
-    background-image url('/images/voltra-2.png')
+    img
+      CenterXY()
+      z-index -1
+      max-width 350px
+      width 75vw
 
-  .slide-8
-    background-image url('/images/tonic.png')
+    @media $tablet
+      img
+        z-index 1
+        transform translate(-50%, -50%) scale(0.5)
+        transition transform 0.5s ease, opacity 0.5s ease 0.3s
 
-  .slide-9
-    background-image url('/images/ma-1.png')
+      &:hover img
+        transform translate(-50%, -50%) scale(1)
+        transition transform 0.5s ease, opacity 0.5s ease 0.1s
 
-  .slide-10
-    background-image url('/images/w4g-7.png')
+    &.voltra
+      background-color #ed4224
+
+    &.dtn
+      background-color #E1AA55
+
+    &.islandjoy
+      background-color #C5BACC
+
+    &.vintagetype
+      background-color #28436b
+
+    &.petalandleaf
+      background-color #8b8d54
+
+    &.tonic
+      background-color #bbcfb0
+
+    &.conductorlab
+      background-color #dac863
+
+    &.maison
+      background-color #aa6488
+
+  // footer
+  //   background-color white
+  //   border-top 2px solid black
+  //   & > *
+  //     padding 30px
+  //     flex-basis 33.3333%
+  //     &:first-of-type
+  //       border-right 2px solid black
+  //     &:last-of-type
+  //       border-left 2px solid black

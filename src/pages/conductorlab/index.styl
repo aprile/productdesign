@@ -1,21 +1,30 @@
 body#conductorlab
 
-  .swatchset
-    justify-content space-around
+  .intro
+    &.left
+      background-image url('/images/cl.png')
 
-    .swatch
-      flex-basis 30%
-      margin-bottom 35px
-  
-      &.orange span
-        background-color #f69a56
-      &.red span
-        background-color #e9664e
-      &.purple span
-        background-color #6a7ebb
-      &.yellow span
-        background-color #dac95b
-      &.blue span
-        background-color #1bacb9
-      &.green span
-        background-color #459b40
+    &.right
+      background-color #dac863
+      h1
+        font-size 80px !important
+
+  .colour-grid > *
+    flex-basis 33.3333%
+    height 25vw
+    padding 50px
+    font-family 'Overpass Mono', monospace
+    letter-spacing 1px
+    font-size 14px
+  .orange
+    background-color #f69a56
+  .red
+    background-color #e9664e
+  .purple
+    background-color #6a7ebb
+  .yellow
+    background-color #dac95b
+  .blue
+    background-color #1bacb9
+  .green
+    background-color #459b40

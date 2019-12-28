@@ -1,85 +1,60 @@
 include ../mixins/head
-include ../mixins/script
+//- include ../mixins/script
 
 +Head('Aprile Elcich')
 
 body#index
   header
-    .top-left 
-    .top-center Aprile Elcich
-    .top-right
-      a(href="/info") Info
-  
-  main
-    .slideshow
-      .slide.slide-1.dark
-        a.open(href="/voltra")
-        .tooltip Voltra Co. &rarr;
-        .caption Product Design
+    h1 Aprile Elcich is a 
+      i digital product designer
+      |  based in Amsterdam.
       
-      .slide.slide-2.dark
-        a.open(href="/dataterranemo")
-        .tooltip Data Terra Nemo &rarr;
-        .caption Branding, Web Design, Frontend
-      
-      .slide.slide-3.dark
-        a.open(href="/islandjoy")
-        .tooltip Island Joy &rarr;
-        .caption Branding, Packaging, Web Design
+    a(href="/info") Read More
+    
+    h1 Selected Work &mdash;
 
-      .slide.slide-4.dark
-        a.open(href="/vintagetype")
-        .tooltip Vintage Type &rarr;
-        .caption Web Design, Frontend
+  main.flex
+    section.voltra
+      a(href="/voltra")
+        h1 Voltra
+        img(src="/images/voltra-10.png")
 
-      .slide.slide-5
-        a.open(href="/petalandleaf")
-        .tooltip Petal &amp; Leaf &rarr;
-        .caption Branding, Packaging, Web Design
+    section.dtn
+      a(href="/dataterranemo")
+        h1 Data Terra Nemo
+        img(src="/images/dtn-0.jpg")
 
-      .slide.slide-6
-        a.open(href="/conductorlab")
-        .tooltip ConductorLab &rarr;
-        .caption Product Design, Frontend
+    section.islandjoy
+      a(href="/islandjoy")
+        h1 Island<br>Joy
+        img(src="/images/islandjoy-10.png")
+          
+    section.vintagetype
+      a(href="/vintagetype")
+        h1 Vintage<br>Type
+        img(src="/images/vintagetype-5.png")
+          
+    section.petalandleaf
+      a(href="/petalandleaf")
+        h1 Petal &amp;<br>Leaf
+        img(src="/images/petalandleaf-4.png")
+          
+    section.tonic
+      a(href="/tonic")
+        h1 Tonic
+        img(src="/images/tonic.png")
 
-      .slide.slide-7
-        a.open(href="/voltra-vms")
-        .tooltip Voltra Music Server &rarr;
-        .caption Product Design, Web Design
-
-      .slide.slide-8
-        a.open(href="/tonic")
-        .tooltip Tonic &rarr;
-        .caption Product Design, Frontend
-
-      .slide.slide-9
-        a.open(href="/maisonapothecare")
-        .tooltip Maison Apothecare &rarr;
-        .caption Branding, Packaging Design
-      
-      .slide.slide-10.dark
-        a.open(href="/wonder4grams")
-        .tooltip Wonder 4 Grams &rarr;
-        .caption Branding, Web Design
-
-      //- 
-      //- .slide.slide-11.dark
-      //-   a.open(href="/voltra")
-      //-   .tooltip View Project &rarr;
-      //-   .caption Slide 3
-      //- 
-      //- .slide.slide-12
-      //-   a.open(href="/voltra")
-      //-   .tooltip View Project &rarr;
-      //-   .caption Slide 3
-        
-      .controls
-        .prev
-        .next
-  
-  footer
-    div
-    .bottom-right
-      div.slide-indicator
-
-+Script()
+    section.conductorlab
+      a(href="/conductorlab")
+        h1 Conductor<br>Lab
+        img(src="/images/thumb-clab.png")
+          
+    section.maison
+      a(href="/maisonapothecare")
+        h1 Maison<br>Apothecare
+        img(src="/images/ma-1.png")
+    
+  //- footer.flex
+  //-   div hi
+  //-   div hi
+  //-   div hi

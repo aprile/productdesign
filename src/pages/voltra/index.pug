@@ -8,290 +8,308 @@ body#voltra
   +Header('Voltra')
   
   main
-    section.grid-min
-      .intro 
-        p A cross-platform hi-definition music player designed for musicians &amp; music collectors.
+    .flex
+      section.intro.flex-50.left
+      section.intro.flex-50.right
+        h1 Voltra<br>Co
+        .caption &mdash; Product Design, UI/UX
     
-    section.grid-max
-      img(src="/images/voltra-5.png")
-    
-    section.grid-min
-      .flex
-        .caption
-          ul
-            li Role
-            li Product Design, UX/UI, Frontend, Prototyping, Art Direction
-          ul
-            li Date
-            li January 2016 to May 2018        
+    section.copy
+      p A cross-platform hi-definition music player designed for musicians &amp; music collectors.
 
-        p Intuitive and lightweight, we focused on simplicity in the design and user experience.
+    section.page-footer
+      .wrapper
+        a(href="/voltra").prev-project.voltra
+          .bullet
+          p Voltra
+        a(href="/islandjoy").next-project.islandjoy
+          .bullet
+          p Island<br>Joy
 
-    hr
-
-    section.grid-min
-      h2 The Voltra Brand
-      p The Voltra brand was intended to be modern and elegant with a nod to analog, instantly familiar and recognizable in name and imagery. An instant classic. Consisting of a number of different projects and applications, a range of marks were needed in the same familiar style, without competing for visual attention.
-      img(src="/images/voltra-logo.svg" width="500px")
-      p Lorem ipsum...
-        
-    section.grid-min
-      .brand-guide
-        div
-          img(src="/images/voltra-brand-1.png")
-        div
-          img(src="/images/voltra-brand-2.png")
-        div
-          img(src="/images/voltra-brand-3.png")
-        div
-          img(src="/images/voltra-brand-4.png")
-      
-    hr
-
-    section.grid-min
-      h2 Typography
-      p The chosen font had to be consistent across platforms, which meant it must be similar enough to different system specific fonts (i.e. Windows, Mac, iOS). The Avenir family worked well for this purpose.
-
-    section.grid-max
-      .typography
-        .one
-          .wrapper
-            img(src="/images/av-light.svg")
-            span Avenir Light
-        .two
-          .wrapper
-            img(src="/images/av-med.svg")
-            span Avenir Medium
-        .three
-          .wrapper
-            img(src="/images/av-black.svg")
-            span Avenir Black
-    
-    section.grid-min
-      h2 Colour
-      p The primary colours (top row) are used for the main application styles, and the secondary colours (bottom row) are optional accent colours. Only one accent colour is used at a time, as a complement to the minimalist tones of the primary scheme.
-    
-    section.grid-med
-      .swatchset
-        .swatch.white
-          span
-          ul
-            li C0 M0 Y0 K0
-            li rgb(255, 255, 255)
-            li #ffffff
-        .swatch.lightgray
-          span
-          ul
-            li C4 M2 Y2 K0
-            li rgb(243, 244, 244)
-            li #f3f4f4
-        .swatch.mediumgray
-          span
-          ul
-            li C39 M26 Y23 K0
-            li rgb(159, 171, 179)
-            li #9fabb3
-        .swatch.darkgray
-          span
-          ul
-            li C73 M64 Y62 K64
-            li rgb(40, 44, 45)
-            li #282c2d
-        .swatch.black
-          span
-          ul
-            li C75 M68 Y67 K90
-            li rgb(0, 0, 0)
-            li #000000
-              
-      .swatchset
-        .swatch.gold
-          span
-          ul
-            li C33 M35 Y76 K4
-            li rgb(172, 150, 93)
-            li #ac965d
-        .swatch.red
-          span
-          ul
-            li C1 M89 Y100 K0
-            li rgb(234, 67, 46)
-            li #ea432e
-        .swatch.purple
-          span
-          ul
-            li C59 M83 Y1 K0
-            li rgb(126, 79, 155)
-            li #7e4f9b
-        .swatch.blue
-          span
-          ul
-            li C77 M49 Y0 K0
-            li rgb(67, 122, 86)
-            li #437aba
-        .swatch.green
-          span
-          ul
-            li C79 M18 Y00 K4
-            li rgb(62, 148, 73)
-            li #3e9449
-
-    hr
-
-    section.grid-min
-      h2 Icons
-      p For the best consistency throughout the applications and websites, I designed an extensive iconset and a SVG sprite system in order to conveniently utilise them.
-      
-    section.grid-max
-      .iconset
-        .icon
-          span Pause
-          svg
-            use(xlink:href="/images/sprite.svg#pause")
-        .icon
-          span Play
-          svg
-            use(xlink:href="/images/sprite.svg#play")
-        .icon
-          span Back
-          svg
-            use(xlink:href="/images/sprite.svg#skip-previous")
-        .icon
-          span Forward
-          svg
-            use(xlink:href="/images/sprite.svg#skip-next")
-        .icon
-          span Play
-          svg
-            use(xlink:href="/images/sprite.svg#play-control")
-        .icon
-          span Pause
-          svg
-            use(xlink:href="/images/sprite.svg#pause-control")
-        .icon
-          span Close
-          svg
-            use(xlink:href="/images/sprite.svg#close")
-        .icon
-          span Arrow
-          svg
-            use(xlink:href="/images/sprite.svg#close-arrow")
-        .icon
-          span Toggle Mode
-          svg
-            use(xlink:href="/images/sprite.svg#mode-toggle")
-        .icon
-          span Search
-          svg
-            use(xlink:href="/images/sprite.svg#search")
-        .icon
-          span Albums
-          svg
-            use(xlink:href="/images/sprite.svg#albums")
-        .icon
-          span Artists
-          svg
-            use(xlink:href="/images/sprite.svg#artists")
-        .icon
-          span Tracks
-          svg
-            use(xlink:href="/images/sprite.svg#tracks")  
-        .icon
-          span Playlists
-          svg
-            use(xlink:href="/images/sprite.svg#playlists")
-        .icon
-          span Genres
-          svg
-            use(xlink:href="/images/sprite.svg#genres")
-        .icon
-          span Shop
-          svg
-            use(xlink:href="/images/sprite.svg#shop")
-        .icon
-          span Equalizer
-          svg
-            use(xlink:href="/images/sprite.svg#equalizer")
-        .icon
-          span Settings
-          svg
-            use(xlink:href="/images/sprite.svg#settings")
-        .icon
-          span History
-          svg
-            use(xlink:href="/images/sprite.svg#history")
-        .icon
-          span Mute
-          svg
-            use(xlink:href="/images/sprite.svg#mute")
-        .icon
-          span Volume
-          svg
-            use(xlink:href="/images/sprite.svg#volume")
-        .icon
-          span Edit
-          svg
-            use(xlink:href="/images/sprite.svg#edit")
-        .icon
-          span Download
-          svg
-            use(xlink:href="/images/sprite.svg#download")
-        .icon
-          span Image
-          svg
-            use(xlink:href="/images/sprite.svg#camera")
-        .icon
-          span Secure
-          svg
-            use(xlink:href="/images/sprite.svg#security")
-        .icon
-          span Offline
-          svg
-            use(xlink:href="/images/sprite.svg#offline")
-
-    section.grid-min
-      p Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-
-      h4 Example .svg
-      .code
-        span.line &lt;symbol 
-          span.c1 id
-          span &equals;
-          span.c2 &ldquo;close&rdquo;
-          span.c1 &nbsp;
-          span.c1 viewBox
-          span &equals;
-          span.c2 &ldquo;0 0 150 150&rdquo;
-          span &gt;
-        span.line &nbsp;&nbsp;&lt;path 
-          span.c1 fill
-          span &equals;
-          span.c2 &ldquo;currentColor&rdquo; 
-          span.c1 d
-          span &equals;
-          span.c2 &ldquo;${path}&rdquo;
-          span &sol;&gt;
-        span.line &lt;&sol;symbol&gt;
-
-      h4 Sprite usage .html
-      .code
-        span.line &lt;svg&gt;
-        span.line &nbsp;&nbsp;&lt;use&nbsp;
-          span.c1 xlink:href
-          span &equals;
-          span.c2 &ldquo;/images/sprite.svg#close&rdquo;
-          span &gt;&lt;&sol;use&gt;
-        span.line &lt;&sol;svg&gt;
-      
-      p Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-    
-    hr
-        
-    section.grid-med
-      img(src="/images/voltra-5.png")
-      
-    section One
-    section Two
-    section Three
+    //- section.grid-min
+    //-   .intro 
+    //-     p A cross-platform hi-definition music player designed for musicians &amp; music collectors.
+    //- 
+    //- section.grid-max
+    //-   img(src="/images/voltra-5.png")
+    //- 
+    //- section.grid-min
+    //-   .flex
+    //-     .caption
+    //-       ul
+    //-         li Role
+    //-         li Product Design, UX/UI, Frontend, Prototyping, Art Direction
+    //-       ul
+    //-         li Date
+    //-         li January 2016 to May 2018        
+    //- 
+    //-     p Intuitive and lightweight, we focused on simplicity in the design and user experience.
+    //- 
+    //- hr
+    //- 
+    //- section.grid-min
+    //-   h2 The Voltra Brand
+    //-   p The Voltra brand was intended to be modern and elegant with a nod to analog, instantly familiar and recognizable in name and imagery. An instant classic. Consisting of a number of different projects and applications, a range of marks were needed in the same familiar style, without competing for visual attention.
+    //-   img(src="/images/voltra-logo.svg" width="500px")
+    //-   p Lorem ipsum...
+    //- 
+    //- section.grid-min
+    //-   .brand-guide
+    //-     div
+    //-       img(src="/images/voltra-brand-1.png")
+    //-     div
+    //-       img(src="/images/voltra-brand-2.png")
+    //-     div
+    //-       img(src="/images/voltra-brand-3.png")
+    //-     div
+    //-       img(src="/images/voltra-brand-4.png")
+    //- 
+    //- hr
+    //- 
+    //- section.grid-min
+    //-   h2 Typography
+    //-   p The chosen font had to be consistent across platforms, which meant it must be similar enough to different system specific fonts (i.e. Windows, Mac, iOS). The Avenir family worked well for this purpose.
+    //- 
+    //- section.grid-max
+    //-   .typography
+    //-     .one
+    //-       .wrapper
+    //-         img(src="/images/av-light.svg")
+    //-         span Avenir Light
+    //-     .two
+    //-       .wrapper
+    //-         img(src="/images/av-med.svg")
+    //-         span Avenir Medium
+    //-     .three
+    //-       .wrapper
+    //-         img(src="/images/av-black.svg")
+    //-         span Avenir Black
+    //- 
+    //- section.grid-min
+    //-   h2 Colour
+    //-   p The primary colours (top row) are used for the main application styles, and the secondary colours (bottom row) are optional accent colours. Only one accent colour is used at a time, as a complement to the minimalist tones of the primary scheme.
+    //- 
+    //- section.grid-med
+    //-   .swatchset
+    //-     .swatch.white
+    //-       span
+    //-       ul
+    //-         li C0 M0 Y0 K0
+    //-         li rgb(255, 255, 255)
+    //-         li #ffffff
+    //-     .swatch.lightgray
+    //-       span
+    //-       ul
+    //-         li C4 M2 Y2 K0
+    //-         li rgb(243, 244, 244)
+    //-         li #f3f4f4
+    //-     .swatch.mediumgray
+    //-       span
+    //-       ul
+    //-         li C39 M26 Y23 K0
+    //-         li rgb(159, 171, 179)
+    //-         li #9fabb3
+    //-     .swatch.darkgray
+    //-       span
+    //-       ul
+    //-         li C73 M64 Y62 K64
+    //-         li rgb(40, 44, 45)
+    //-         li #282c2d
+    //-     .swatch.black
+    //-       span
+    //-       ul
+    //-         li C75 M68 Y67 K90
+    //-         li rgb(0, 0, 0)
+    //-         li #000000
+    //- 
+    //-   .swatchset
+    //-     .swatch.gold
+    //-       span
+    //-       ul
+    //-         li C33 M35 Y76 K4
+    //-         li rgb(172, 150, 93)
+    //-         li #ac965d
+    //-     .swatch.red
+    //-       span
+    //-       ul
+    //-         li C1 M89 Y100 K0
+    //-         li rgb(234, 67, 46)
+    //-         li #ea432e
+    //-     .swatch.purple
+    //-       span
+    //-       ul
+    //-         li C59 M83 Y1 K0
+    //-         li rgb(126, 79, 155)
+    //-         li #7e4f9b
+    //-     .swatch.blue
+    //-       span
+    //-       ul
+    //-         li C77 M49 Y0 K0
+    //-         li rgb(67, 122, 86)
+    //-         li #437aba
+    //-     .swatch.green
+    //-       span
+    //-       ul
+    //-         li C79 M18 Y00 K4
+    //-         li rgb(62, 148, 73)
+    //-         li #3e9449
+    //- 
+    //- hr
+    //- 
+    //- section.grid-min
+    //-   h2 Icons
+    //-   p For the best consistency throughout the applications and websites, I designed an extensive iconset and a SVG sprite system in order to conveniently utilise them.
+    //- 
+    //- section.grid-max
+    //-   .iconset
+    //-     .icon
+    //-       span Pause
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#pause")
+    //-     .icon
+    //-       span Play
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#play")
+    //-     .icon
+    //-       span Back
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#skip-previous")
+    //-     .icon
+    //-       span Forward
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#skip-next")
+    //-     .icon
+    //-       span Play
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#play-control")
+    //-     .icon
+    //-       span Pause
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#pause-control")
+    //-     .icon
+    //-       span Close
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#close")
+    //-     .icon
+    //-       span Arrow
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#close-arrow")
+    //-     .icon
+    //-       span Toggle Mode
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#mode-toggle")
+    //-     .icon
+    //-       span Search
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#search")
+    //-     .icon
+    //-       span Albums
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#albums")
+    //-     .icon
+    //-       span Artists
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#artists")
+    //-     .icon
+    //-       span Tracks
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#tracks")  
+    //-     .icon
+    //-       span Playlists
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#playlists")
+    //-     .icon
+    //-       span Genres
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#genres")
+    //-     .icon
+    //-       span Shop
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#shop")
+    //-     .icon
+    //-       span Equalizer
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#equalizer")
+    //-     .icon
+    //-       span Settings
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#settings")
+    //-     .icon
+    //-       span History
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#history")
+    //-     .icon
+    //-       span Mute
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#mute")
+    //-     .icon
+    //-       span Volume
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#volume")
+    //-     .icon
+    //-       span Edit
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#edit")
+    //-     .icon
+    //-       span Download
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#download")
+    //-     .icon
+    //-       span Image
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#camera")
+    //-     .icon
+    //-       span Secure
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#security")
+    //-     .icon
+    //-       span Offline
+    //-       svg
+    //-         use(xlink:href="/images/sprite.svg#offline")
+    //- 
+    //- section.grid-min
+    //-   p Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    //- 
+    //-   h4 Example .svg
+    //-   .code
+    //-     span.line &lt;symbol 
+    //-       span.c1 id
+    //-       span &equals;
+    //-       span.c2 &ldquo;close&rdquo;
+    //-       span.c1 &nbsp;
+    //-       span.c1 viewBox
+    //-       span &equals;
+    //-       span.c2 &ldquo;0 0 150 150&rdquo;
+    //-       span &gt;
+    //-     span.line &nbsp;&nbsp;&lt;path 
+    //-       span.c1 fill
+    //-       span &equals;
+    //-       span.c2 &ldquo;currentColor&rdquo; 
+    //-       span.c1 d
+    //-       span &equals;
+    //-       span.c2 &ldquo;${path}&rdquo;
+    //-       span &sol;&gt;
+    //-     span.line &lt;&sol;symbol&gt;
+    //- 
+    //-   h4 Sprite usage .html
+    //-   .code
+    //-     span.line &lt;svg&gt;
+    //-     span.line &nbsp;&nbsp;&lt;use&nbsp;
+    //-       span.c1 xlink:href
+    //-       span &equals;
+    //-       span.c2 &ldquo;/images/sprite.svg#close&rdquo;
+    //-       span &gt;&lt;&sol;use&gt;
+    //-     span.line &lt;&sol;svg&gt;
+    //- 
+    //-   p Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    //- 
+    //- hr
+    //- 
+    //- section.grid-med
+    //-   img(src="/images/voltra-5.png")
+    //- 
+    //- section One
+    //- section Two
+    //- section Three
     
   +Footer('Index', '/', 'Data Terra Nemo', '/dataterranemo')

@@ -2,31 +2,44 @@ body#petalandleaf
   --accent #8d9050
 
   .intro
-    margin-bottom 40px
-    p
-      color var(--accent)
-      margin-bottom 0
+    &.left
+      background-image url('/images/petalandleaf-4.png')
 
-  .swatchset
-    .swatch
-      flex-basis 12.5%
+    &.right
+      background-color #8d9050
 
-      span
-        padding-bottom 100%
+  section.image-box
+    background-color #8d9050
+    padding 100px 50px
+    img
+      width 80%
+      margin 0 auto
+      display block
 
-      &.red span
-        background #b55f36
-      &.pink span
-        background #d59fa6
-      &.orange span
-        background #eab636
-      &.yellow span
-        background #e8d628
-      &.darkgreen span
-        background #8d9050
-      &.green span
-        background #c9d345
-      &.blue span
-        background #cdd6ee
-      &.purple span
-        background #8976be
+  .colour-grid > *
+    flex-basis 50%
+    height 50vw
+    padding 50px
+    font-family 'Overpass Mono', monospace
+    letter-spacing 1px
+    font-size 14px
+    @media $desktop
+      flex-basis 25%
+      height 25vw
+
+  .red
+    background-color #b55f36
+  .pink
+    background-color #d59fa6
+  .orange
+    background-color #eab636
+  .yellow
+    background-color #e8d628
+  .darkgreen
+    background-color #8d9050
+  .green
+    background-color #c9d345
+  .blue
+    background-color #cdd6ee
+  .purple
+    background-color #8976be
