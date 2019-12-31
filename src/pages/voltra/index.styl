@@ -1,15 +1,20 @@
 body#voltra
   --accent var(--red)
 
+  .dark
+    background-color #1e1f22
+
   .intro
     &.left
-      background-image url('/images/voltra-3-port.png')
+      background-size contain
+      background-repeat no-repeat
+      background-color #1e1f22
+      background-image url('/images/voltra_desktop-2.png')
 
     &.right
       background-color var(--red)
 
   section.copy
-    padding 100px 0
     p
       max-width 700px
       margin 0 auto
@@ -25,6 +30,46 @@ body#voltra
       width 80%
       margin 0 auto
       display block
+
+  .font-grid
+    width 100%
+    height 650px
+    position relative
+    overflow hidden
+    .font
+      width 100%
+      height 100%
+      position absolute
+      top 0
+      bottom 0
+      background-repeat no-repeat
+      background-color #1e1f22
+      border-left 1px solid white
+      transition transform 0.2s ease
+      &:nth-of-type(1)
+        left 0
+        background-image url('/images/voltra_font-1.svg')
+        z-index 1
+        border-left 0
+        &:hover ~ .font:nth-of-type(2)
+          transform translateX(50%)
+        &:hover ~ .font:nth-of-type(3)
+          transform translateX(75%)
+      &:nth-of-type(2)
+        transform translateX(25%)
+        background-image url('/images/voltra_font-2.svg')
+        z-index 1
+        &:hover ~ .font:nth-of-type(3)
+          transform translateX(90%)
+      &:nth-of-type(3)
+        transform translateX(50%)
+        background-image url('/images/voltra_font-3.svg')
+        z-index 1
+      .caption
+        color white
+        position absolute
+        bottom 30px
+        left 30px
 
   .colour-grid > *
     flex-basis 20%

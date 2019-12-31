@@ -17,6 +17,11 @@ body
   h1, h2, h3
     font-weight normal
 
+  h1
+    font normal 40px var(--primary)
+    margin-bottom 70px
+    margin-top 0
+
   h2
     font bold 22px var(--secondary)
     text-transform uppercase
@@ -25,6 +30,11 @@ body
 
   p
     font-weight 300
+    font-size 24px
+    line-height 34px
+
+  blockquote
+    margin 0
     font-size 32px
     line-height 42px
 
@@ -32,6 +42,8 @@ body
     border 0
     border-top 1px solid #eaeaea
     margin 50px 0
+    &.spacer
+      border-top 0
 
   img
     max-width 100%
@@ -74,8 +86,13 @@ body
       text-align right
 
   section.copy
-    max-width 700px
+    padding 0
     margin 80px auto
+
+  .copy
+    max-width 700px
+    width 50%
+    margin 0 auto
 
   .flex
     display flex
@@ -89,6 +106,10 @@ body
       flex-basis 100%
       @media $desktop
         flex-basis 50%
+    .flex-75
+      flex-basis 100%
+      @media $desktop
+        flex-basis 75%
 
   .intro
     height 75vh
@@ -116,6 +137,12 @@ body
 
   section.image-small
     padding 150px 0
+
+  ul.bulleted
+    font-size 18px
+    list-style square
+    margin-left 18px
+    line-height 31px
 
   .caption
     margin-top 20px

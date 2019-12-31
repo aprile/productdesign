@@ -17,16 +17,37 @@ body#voltra
           | &mdash; Frontend, Prototyping
     
     section.copy
-      p A cross-platform hi-definition music player designed for musicians &amp; music collectors.
+      blockquote A cross-platform hi-definition music player designed for musicians &amp; music collectors.
+      hr
+      p Intuitive and lightweight, we focused on simplicity in the design and user experience. To build the best possible product, we performed extensive manual and automated testing, working in tandem with feedback and direct interaction with 5K+ users.
     
     section.image-box.dark
       img(src="/images/voltra_logo.png")
     
+    .copy
+      .caption a. The primary
+        i  Voltra
+        |  wordmark
+    
     section.copy
+      h1 Visual Interface Design
       h2 Branding
       p The 
         i Voltra
-        |  brand was intended to be modern and elegant with a nod to analog, instantly familiar and recognizable in name and imagery. An instant classic. Consisting of a number of different projects and applications, a range of complimentary marks were needed in the same visual style, without competing for attention.
+        |  brand was designed to be modern and elegant with a nod to analog, instantly familiar and recognizable in name and imagery. An instant classic. Consisting of a number of different projects and applications, a range of complimentary marks were needed in the same visual style, without competing for attention.
+    hr
+    section.copy
+      .flex
+        .flex-50
+          h2 App Icon
+          p The App Icon went through a number of iterations, the final icon we arrived at took the analog style of the 
+            i Voltra
+            |  wordmark and icon (the 
+            i volt
+            | ) and brought them together to create the
+            i  Voltra Monogram.
+        .flex-50
+          img(src="/images/voltra-appicon.png")
 
     section.flex.colour-grid  
       .white
@@ -99,22 +120,119 @@ body#voltra
           li R62 G148 B73
           li C79 M18 Y0 K4
           li #3E9449
-        
+    
     section.copy
-      p Intuitive and lightweight, we focused on simplicity in the design and user experience. To build the best possible product, we performed extensive manual and automated testing, working in tandem with feedback and direct interaction with our 5000+ user base.
+      h2 Colour
+      p The primary monochromatic shades are used for the main application styles, and the secondary colours are optional accent colours. Only one accent colour is used at a time, as a complement to the minimalist tones of the primary scheme.
+    
+    hr
+
+    .flex
+      .flex-25
+      .flex-25
+      .flex-25
+
+
+    section.copy
+      h2 Typography
+      p The chosen font had to be visually consistent across platforms, which meant it must be similar enough to different system specific fonts (i.e. 
+        i  Windows, Mac, iOS
+        | ). The 
+        i  Avenir
+        |  family worked well for this purpose.
+      
+      hr.spacer
+
+      .flex
+        .flex-50
+        .flex-50
+          img(src="/images/voltra_avenir.jpg" width="100%")
+          .caption a. Local inspiration
+    
+    .font-grid
+      .font
+        .caption Avenir Light
+      .font
+        .caption Avenir Regular
+      .font
+        .caption Avenir Bold
 
     section.image-box
       img(src="/images/voltra.png")
+
+    .copy
+      .caption b. The
+        i  Voltra Desktop Player
+        
+    section.copy
+      h1 Voltra Desktop Player
+      h2 Problem
+      blockquote
+        i Design an intuitive, lightweight multi-platform desktop player for avid music collectors.
+      hr
+      h2 Technical Challenges
+      ul.bulleted
+        li Effective across multiple platforms (Mac, Windows, Linux)
+        li Able to handle a huge variance in file types and sizes
+        li Sync files and metadata across multiple platforms and devices
+        li UI performance, displaying thousands of list items and images
+      hr
+      h2 Design Challenges
+      ul.bulleted
+        li Consistent UI patterns and interactions that also meet platform expectations
+        li Balancing minimalism and user adoption / understanding
+        li Testing and improving performance for a CSS heavy interface
+        li Determining appropriate user design feedback and implementation
+    
+    section.image-box.dark
+      img(src="/images/voltra_desktop-6.png")  
+    
+    .copy
+      .caption c. Player modes from left: Micro, Mini, Normal.
+    
+    section.copy
+      h1 Interaction Design
+      h2 Desktop Player Modes
+      p The
+        i Voltra Desktop Player
+        |  includes two additional player modes, mini and micro. 
+        | Each pares down the full design to its essential parts giving the user a distraction-free listening experience. The design of the player modes also follows consistent design patterns with the
+        i  Voltra Mobile Player.
+
+    section.copy
+      h1 Voltra Mobile Player
+      p The
+        i  Voltra Mobile Player
+        |  was an important next step in building the complete product. With the
+        i  Voltra Audio Archive
+        |  service (cloud storage locker for music), users can upload their music through the
+        i  Voltra Desktop App
+        |  and access it through the mobile player.
+      hr
+      h2 Challenges
+      ul.bulleted
+        li Cross platform consistency (Android and iOS)
+        li Challenging expected platform conventions as much as possible
+        li Bridging the UI expectations across both platforms
+        li Translating the web player to a new platform
+        li Balance between expected, unconventional and intuitive interactions
+      hr
+      p The result, after rigorous user testing, was an app that felt intuitive and familiar. It utilized common gestures in the navigation, ensuring the user’s interaction matches their expectation.
+      hr
+      h2 Process
+      p The process of building the Mobile App began with research of other music apps, then we compared with the existing design of the Desktop application.
+      p Then, iterating on the design through wireframes and coding prototypes to test and solidify the gestures.
+      p Released as a beta with many willing testers, the design was polished alongside confirming the user’s expecatations and making adjustments from feedback.
 
     section
       img(src="/images/voltra-6.png" width="100%")
       img(src="/images/voltra_ios-dark.png" width="100%") 
       img(src="/images/voltra-9.gif" width="100%")
-
+    
     section.copy
       img(src="/images/voltra-10.png" width="100%") 
       .caption a. Voltra guitar picks
-  
+    
 
     section.page-footer
       .wrapper
