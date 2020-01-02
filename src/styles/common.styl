@@ -163,8 +163,21 @@ body
         font-family var(--mono)
         font-size 14px
 
-  section.image-small
-    padding 150px 0
+  .view-site
+    margin-top 30px
+    a
+      color var(--accent)
+      font bold 20px var(--mono)
+      text-decoration underline
+      &:hover
+        text-decoration none
+
+  .image-small
+    padding 50px 0
+    @media $desktop
+      padding 150px 0
+    .flex-50
+      text-align center
 
   ul.bulleted
     font-size 18px

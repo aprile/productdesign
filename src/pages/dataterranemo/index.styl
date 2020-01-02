@@ -1,16 +1,6 @@
 body#dtn
   --accent #c08a39
 
-  .view-site
-    margin-top 30px
-    a
-      color var(--accent)
-      font bold 20px var(--mono)
-      text-decoration underline
-      cursor url('/images/cursor-dtn.png'), pointer
-      &:hover
-        text-decoration none
-
   .intro
     &.left
       background-image url('/images/dtn-0.jpg')
@@ -18,11 +8,24 @@ body#dtn
     &.right
       background-color #E1AA55
 
+  .colour-grid
+    display flex
+    .colour
+      height 250px
+      flex-basis 50%
+      padding 40px
+      font 14px var(--mono)
+      &.black
+        color white
+        background-color #21211d
+      &.cream
+        background-color #f6eddb
+
   .page-footer
-    .voltra
-      cursor url('/images/cursor-voltra.png'), pointer
-    .islandjoy
-      cursor url('/images/cursor-islandjoy.png'), pointer
+    // .voltra
+    //   cursor url('/images/cursor-voltra.png'), pointer
+    // .islandjoy
+    //   cursor url('/images/cursor-islandjoy.png'), pointer
 
   .copy
     padding 100px 0
