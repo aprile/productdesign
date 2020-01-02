@@ -2,8 +2,12 @@
   background-color #1d1e22
   display flex
   flex-wrap wrap
-  align-items flex-start
+  justify-content center
   padding 100px
+  @media $desktop-large
+    align-items flex-start
+  @media $mobile
+    padding 0
 
 .icon
   padding 55px 45px 35px 45px
@@ -14,7 +18,6 @@
   &:hover > span
     visibility visible
   &:hover
-    // background-color white
     border 1px solid var(--border)
     z-index 1
     Scale(1.5)

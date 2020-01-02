@@ -12,7 +12,10 @@ body
 
   main
     background-color white
-    cursor url('/images/cursor-black.png'), pointer
+    // cursor url('/images/cursor-black.png'), pointer
+
+  .cursor-light
+    // cursor url('/images/cursor-white.png'), pointer
 
   h1, h2, h3
     font-weight normal
@@ -28,10 +31,18 @@ body
     letter-spacing 1px
     margin-bottom 30px
 
+  h4
+    font-family var(--secondary)
+    text-transform uppercase
+    font-size 14px
+    margin-top 40px
+
   p
     font-weight 300
     font-size 24px
     line-height 34px
+    @media $mobile
+      font 20px/28px var(--primary)
 
   blockquote
     margin 0
@@ -88,15 +99,23 @@ body
   section.copy
     padding 0
     margin 80px auto
+    @media $mobile
+      margin 50px auto
 
   .copy
     max-width 700px
-    width 50%
     margin 0 auto
+    width 70%
+    @media $desktop-large
+      width 50%
+    @media $mobile
+      width 80%
 
   .flex
     display flex
     flex-wrap wrap
+    &.center
+      justify-content center
 
     .flex-25
       flex-basis 25%
@@ -107,13 +126,15 @@ body
       @media $desktop
         flex-basis 50%
     .flex-75
-      flex-basis 100%
+      flex-basis 90%
       @media $desktop
         flex-basis 75%
 
   .intro
-    height 75vh
+    height 60vh
     max-height 1050px
+    @media $mobile
+      height 50vh
     @media $desktop
       height 100vh
 
@@ -124,12 +145,19 @@ body
     &.right
       padding 60px
       padding-top 100px
+      @media $mobile
+        padding 40px
+        padding-top 100px
 
       h1
         font 600 100px/100px var(--secondary)
         text-transform uppercase
         letter-spacing 5px
         margin 50px 0
+        @media $mobile
+          font 600 60px/60px var(--secondary)
+          letter-spacing 2px
+          margin 0
 
       .caption
         font-family var(--mono)
