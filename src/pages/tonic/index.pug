@@ -12,27 +12,33 @@ body#tonic
       section.intro.flex-50.left
       section.intro.flex-50.right
         h1 Tonic
-        //- .caption &mdash; Branding, Packaging, Web Design
+        .caption 
+          | &mdash; UX/UI Design, Branding
+          br
+          | &mdash; Web Design and Development
     
     section.copy
-      p Packaging for Island Joy’s line of handcrafted sugar scrubs. Inspired by the essence of the Caribbean and our clients' Jamaican-Antiguan heritage, Island Joy’s scrubs are made in small batches using natural & organic ingredients, and infused with exotic scents of the tropics.
-    
-    
-    section.grid-min
-      .intro
-        p Tonic is a minimalist, stable component framework. It is about 250 lines of code in total, and favours React-like component composition.
+      blockquote Tonic is a minimalist, stable component framework. It is about 250 lines of code in total, and favours React-like component composition. 
+      hr
+      p Using my previous experience in designing application interfaces, my role in this project was designing and building out the default UI components and themes in the Tonic framework for use in future projects.
+      
+    section.copy
+      h1 Visual Interface Design
+      h2 Logo
+      p tbd
+      h2 Typography
+      p tbd
+      h2 Colour
+      p tbd
+      h2 Elements
+      p The default form elements for Tonic components. Each element can be 
+        |  customized (fonts, colours, etc) and I wanted to create a solid
+        |  base that is well-designed and commincative but also a good canvas
+        |  for user customization.
+      p All components were also designed and developed to include keyboard support.
 
     section.grid-max
       img(src="/images/tonic.png")
-    
-    section.grid-min
-      p Using my previous experience in designing application interfaces, my role in this project was designing and building out the default UI components and themes in the Tonic framework for use in future projects.
-      
-      h2 Typography
-      p Lorem ipsum...
-
-      h2 Colour
-      p Lorem ipsum...
     
     section.grid-med
       .swatchset
@@ -53,15 +59,13 @@ body#tonic
         .swatch.green
           span
     
-    section.grid-min
-      h2 Form Elements
-      p The default form elements for Tonic components. Each element can be customized (fonts, colours, etc) and I wanted to create a solid base that is well-designed and commincative but also a good canvas for user customization.
-      
-      h2 UI Elements
-      p Useful default Tonic components.
-      p All components were also designed and developed to include keyboard support.
-
-    hr
-
+    section.page-footer
+      .wrapper
+        a(href="/vintagetype").prev-project.vintagetype
+          .bullet
+          p Vintage<br>Type
+        a(href="/conductorlab").next-project.conductorlab
+          .bullet
+          p Conductor Lab
     
-  +Footer('Voltra Music Server', '/vms', 'Maison Apothecare', '/maisonapothecare')
+  +Footer('Petal and Leaf', '/petalandleaf', 'Conductor Lab', '/conductorlab')
