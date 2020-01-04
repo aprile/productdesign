@@ -5,13 +5,16 @@ body#index
     padding 100px 40px 60px 40px
     background-color #191919
 
-    a
+    .read-more, .read-less
+      display inline-block
+      margin-top 20px
       font bold 12px var(--secondary)
       text-transform uppercase
       text-decoration underline
       letter-spacing 1px
-      margin-left 5px
       display inline-block
+    .read-more
+      transition opacity 0.5s ease 0.3s
 
     h1
       max-width 450px
@@ -19,6 +22,50 @@ body#index
       margin 20px 0
       &:last-of-type
         margin-top 100px
+
+    h2
+      font bold 12px var(--secondary)
+      text-transform uppercase
+      letter-spacing 1px
+      margin-top 0
+
+  .expanded
+    margin-top -20px
+    max-height 0
+    overflow hidden
+    opacity 0
+    transition all 0.5s ease 0s
+
+  input
+    display none
+
+  input#info:checked ~ .read-more
+    opacity 0
+    transition opacity 0s ease 0s
+
+  input#info:checked ~ .expanded
+    opacity 1
+    max-height 1000px
+    transition all 0.5s ease 0s
+
+  .info
+    color #fff
+    .no-link
+      color #aaa
+
+    ul
+      line-height 27px
+      @media $mobile
+        margin-bottom 40px
+
+    a:hover
+      font-style italic
+
+  .contact
+    margin-top 50px
+
+    a:hover
+      text-decoration underline
 
   section
     height 100vw

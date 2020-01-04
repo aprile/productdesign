@@ -2,11 +2,9 @@ body#dtn
   --accent #c08a39
 
   .intro
+    background-color #E1AA55
     &.left
       background-image url('/images/dtn-0.jpg')
-
-    &.right
-      background-color #E1AA55
 
   .colour-grid
     display flex
@@ -23,6 +21,8 @@ body#dtn
 
   .copy
     padding 60px 0
+    @media $mobile
+      padding 30px 0
 
   section.image-box
     background-color var(--accent)

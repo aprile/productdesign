@@ -8,9 +8,72 @@ body#index
     h1 Aprile Elcich is a 
       i digital product designer
       |  based in Amsterdam.
-      
-    a(href="/info") Read More
     
+    input#info(type="checkbox" name="info")
+    label.read-more(for="info") Read More
+
+    .expanded
+      .flex.info
+        .flex-30
+          h2 Services
+          ul
+            li Product Design
+            li UX/UI Design
+            li Digital Design
+            li Visual Identity
+            li Graphic Design
+            li Art Direction
+            li Frontend Development
+        .flex-30
+          h2 Featured
+          ul
+            li
+              a(href="http://lovelypackage.com/petal-leaf/" target="_blank" rel="noopener")
+                | Lovely Package
+            li
+              a(href="https://thedieline.com/blog/2015/9/29/petal-leaf-holistic-aromatics" target="_blank" rel="noopener")
+                | The Dieline
+            li
+              a(href="https://www.amazon.com/Cutting-Edges-Contemporary-Robert-Klanten/dp/3899553381" target="_blank" rel="noopener")
+                | Gestalten: Cutting Edges
+            li
+              a(href="https://www.fonts.com/browse/hero-images" target="_blank" rel="noopener")
+                | Fonts.com
+            li.no-link The ADCC
+            li.no-link How: 16 Emerging Creatives
+            li.no-link Design Work Life
+        .flex-30
+          h2 Follow
+          ul
+            li 
+              a(href="https://www.linkedin.com/in/aprileelcich/" target="_blank" rel="noopener")
+                | LinkedIn
+            li
+              a(href="https://www.behance.net/aprile" target="_blank" rel="noopener")
+                | Behance
+            li
+              a(href="https://www.github.com/aprile" target="_blank" rel="noopener")
+                | Github
+            li
+              a(href="https://dribbble.com/aprileelcich" target="_blank" rel="noopener")
+                | Dribbble
+            li
+              a(href="https://www.pinterest.ca/aprileelcich/pins/" target="_blank" rel="noopener")
+                | Pinterest
+            li
+              a(href="https://www.instagram.com/aprileelcich" target="_blank" rel="noopener")
+                | Instagram
+
+      .flex.contact
+        .flex-30
+          h2 
+            a(href="mailto:info@aprileelcich.com") info@aprileelcich.com
+        .flex-30
+          h2 
+            a(href="tel:+31061167339") (+31) 06 11 66 73 39
+    
+      label.read-less(for="info") Read Less
+
     h1 Selected Work &mdash;
 
   main.flex

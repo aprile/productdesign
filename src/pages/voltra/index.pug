@@ -8,9 +8,9 @@ body#voltra
   +Header('Voltra')
   
   main
-    .flex
-      section.intro.flex-50.left
-      section.intro.flex-50.right
+    .intro-wrapper
+      .intro.left
+      .intro.right
         h1 Voltra<br>Co
         .caption &mdash; Product Design, Branding, UI/UX
           br 
@@ -434,7 +434,6 @@ body#voltra
 
     img(src="/images/voltra_webinterface.png")
 
-    img(src="/images/vms-1.jpg.png")
     section.copy
       img(src="/images/vaa-1_1.jpg")
       hr.spacer
@@ -469,11 +468,11 @@ body#voltra
 
     section.page-footer
       .wrapper
-        a(href="/").prev-project
+        a(href="/").prev-project.index
           .bullet
           p Index
         a(href="/dataterranemo").next-project.dtn
           .bullet
-          p Data Terra Nemo
+          p Data Terra<br>Nemo
     
   +Footer('Index', '/', 'Data Terra Nemo', '/dataterranemo')

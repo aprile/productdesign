@@ -8,9 +8,9 @@ body#conductorlab
   +Header('ConductorLab')
   
   main
-    .flex
-      section.intro.flex-50.left
-      section.intro.flex-50.right
+    .intro-wrapper
+      .intro.left
+      .intro.right
         h1 Conductor<br>Lab
         .caption &mdash; Product Design, UX/UI, Branding
     
@@ -127,6 +127,7 @@ body#conductorlab
       p Application icons from left to right:
         i  NoSQL, Gitmesh, Logs, Buckets, Functions.
       hr.spacer
+
       .flex.app-icons.space
         .flex-15
           img(src="/images/cl_icon-dynamo.svg")
@@ -139,6 +140,7 @@ body#conductorlab
         .flex-15
           img(src="/images/cl_icon-functions.svg")
     hr
+
     section.copy
       h1 Primary App
       p With an application format similar to
@@ -217,7 +219,8 @@ body#conductorlab
     
     img(src="/images/conductorlab-3.png")
     img(src="/images/conductorlab-5.jpg")
-    .flex.center
+    
+    .flex.center.inset
       .flex-50
         .caption a. Design experimentation of activity graph
     

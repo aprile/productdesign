@@ -9,4 +9,6 @@ mixin Header(title)
 
     .top-right 
       a(href="/")
-        img(src="/images/close.png" width="25px")
+        .nav-icon
+          svg
+            use(xlink:href="/images/sprite.svg#close")

@@ -5,14 +5,12 @@ body#voltra
     background-color #1e1f22
 
   .intro
+    background-color var(--red)
     &.left
       background-size contain
       background-repeat no-repeat
       background-color #1e1f22
       background-image url('/images/voltra_desktop-2.png')
-
-    &.right
-      background-color var(--red)
 
   .icon span
     font-family var(--secondary)
@@ -35,6 +33,8 @@ body#voltra
       width 80%
       margin 0 auto
       display block
+      @media $mobile
+        width 100%
 
   .font-grid
     Size(100%, 660px)

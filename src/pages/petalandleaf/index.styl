@@ -2,11 +2,17 @@ body#petalandleaf
   --accent #8d9050
 
   .intro
+    background-color #8d9050
     &.left
       background-image url('/images/petalandleaf-4.png')
-
     &.right
-      background-color #8d9050
+      h1.break
+        display none
+      @media $mobile
+        h1.full
+          display none
+        h1.break
+          display block
 
   section.image-box
     background-color #8d9050
@@ -25,6 +31,8 @@ body#petalandleaf
     letter-spacing 1px
     padding 50px
     flex-basis 50%
+    @media $mobile
+      padding 20px
     @media $desktop
       flex-basis 25%
       height 25vw

@@ -2,13 +2,14 @@ body#conductorlab
   --accent #397ac8
 
   .intro
+    background-color var(--accent)
     &.left
       background-image url('/images/conductorlab-1.png')
-
     &.right
-      background-color var(--accent)
       h1
-        font-size 80px !important
+        letter-spacing 0px !important
+        font-size 70px !important
+        line-height 70px !important
 
   section.image-box
     padding 100px 50px
@@ -21,8 +22,12 @@ body#conductorlab
     &.logo
       padding 250px 50px
       background-color var(--accent)
+      @media $mobile
+        padding 100px 50px
       img
         width 40%
+        @media $mobile
+          width 80%
 
   .colour-grid > *
     height 260px
@@ -30,6 +35,9 @@ body#conductorlab
     letter-spacing 1px
     padding 50px
     flex-basis 50%
+    @media $mobile
+      padding 20px
+      height 200px
     @media $desktop
       flex-basis 25%
     &.orange

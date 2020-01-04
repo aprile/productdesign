@@ -2,11 +2,9 @@ body#tonic
   --accent #dac863
 
   .intro
+    background-color var(--accent)
     &.left
       background-image url('/images/tonic-0.png')
-
-    &.right
-      background-color var(--accent)
 
   .colour-grid > *
     height 50vw
@@ -14,6 +12,8 @@ body#tonic
     letter-spacing 1px
     padding 50px
     flex-basis 50%
+    @media $mobile
+      padding 20px
     @media $desktop
       flex-basis 25%
       height 25vw

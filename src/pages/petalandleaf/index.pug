@@ -8,10 +8,11 @@ body#petalandleaf
   +Header('Petal & Leaf')
   
   main
-    .flex
-      section.intro.flex-50.left
-      section.intro.flex-50.right
-        h1 Petal &amp; Leaf
+    .intro-wrapper
+      .intro.left
+      .intro.right
+        h1.full Petal &amp; Leaf
+        h1.break Petal &amp;<br>Leaf
         .caption &mdash; Branding, Packaging, Web Design
     
     section.copy
@@ -39,21 +40,21 @@ body#petalandleaf
           li &mdash;
           li R43 G21 B5
           li C97 M0 Y24 K18
-          li #EAEAEA
+          li #tbdtbd
       .orange
         ul
           li Orange Blossom &amp; Jasmine
           li &mdash;
           li R43 G21 B5
           li C97 M0 Y24 K18
-          li #EAEAEA
+          li #tbdtbd
       .yellow
         ul
           li Bergamot &amp; Vanilla
           li &mdash;
           li R43 G21 B5
           li C97 M0 Y24 K18
-          li #EAEAEA
+          li #tbdtbd
       .purple
         ul
           li Ylang &amp; Sandalwood
@@ -67,21 +68,21 @@ body#petalandleaf
           li &mdash;
           li R43 G21 B5
           li C97 M0 Y24 K18
-          li #EAEAEA
+          li #tbdtbd
       .green
         ul
           li Narcissus &amp; Neroli
           li &mdash;
           li R43 G21 B5
           li C97 M0 Y24 K18
-          li #EAEAEA
+          li #tbdtbd
       .darkgreen
         ul
           li Dark Green
           li &mdash;
           li R43 G21 B5
           li C97 M0 Y24 K18
-          li #EAEAEA
+          li #tbdtbd
           
     section.copy
       h2 Colour
@@ -135,7 +136,7 @@ body#petalandleaf
     
     hr.spacer
 
-    .flex
+    .flex.inset
       .flex-50
       .flex-30
         img(src="/images/petalandleaf-5.png")
@@ -152,7 +153,7 @@ body#petalandleaf
     img(src="/images/petalandleaf-6.png")
     
     hr.spacer
-    .flex
+    .flex.inset
       .flex-15
       .flex-30
         img(src="/images/petalandleaf-8.png")
