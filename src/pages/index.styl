@@ -1,24 +1,21 @@
 body#index
 
   header
-    padding: 100px 40px 60px 40px
-    background-color #191919
     color white
-    // cursor url('/images/cursor-white.png'), pointer
+    padding 100px 40px 60px 40px
+    background-color #191919
 
     a
-      font-size 12px
-      font-family var(--secondary)
+      font bold 12px var(--secondary)
       text-transform uppercase
-      font-weight bold
-      letter-spacing 1px
       text-decoration underline
-      display inline-block
+      letter-spacing 1px
       margin-left 5px
+      display inline-block
 
     h1
-      font normal 38px/50px var(--primary)
       max-width 450px
+      font normal 38px/50px var(--primary)
       margin 20px 0
       &:last-of-type
         margin-top 100px
@@ -38,13 +35,12 @@ body#index
     a
       padding 25px
       Absolute(0)
-      // cursor url('/images/cursor-black.png'), pointer
       @media $desktop
         padding 40px
 
     h1
-      max-width 575px
       color #191919
+      max-width 575px
       font 600 75px/75px var(--secondary)
       text-transform uppercase
       letter-spacing 2px
@@ -54,10 +50,10 @@ body#index
         font 600 85px/85px var(--secondary)
 
     img
+      width 75vw
+      max-width 350px
       CenterXY()
       z-index -1
-      max-width 350px
-      width 75vw
 
     @media $tablet
       img
@@ -69,37 +65,20 @@ body#index
         transform translate(-50%, -50%) scale(1)
         transition transform 0.5s ease, opacity 0.5s ease 0.1s
 
+  section
     &.voltra
       background-color #ed4224
-
     &.dtn
       background-color #E1AA55
-
     &.islandjoy
       background-color #C5BACC
-
     &.vintagetype
       background-color #28436b
-
     &.petalandleaf
       background-color #8b8d54
-
     &.tonic
       background-color #bbcfb0
-
     &.conductorlab
       background-color #dac863
-
     &.maison
       background-color #aa6488
-
-  // footer
-  //   background-color white
-  //   border-top 2px solid black
-  //   & > *
-  //     padding 30px
-  //     flex-basis 33.3333%
-  //     &:first-of-type
-  //       border-right 2px solid black
-  //     &:last-of-type
-  //       border-left 2px solid black

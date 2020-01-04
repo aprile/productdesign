@@ -10,21 +10,27 @@ body#conductorlab
         font-size 80px !important
 
   .colour-grid > *
-    flex-basis 33.3333%
-    height 25vw
-    padding 50px
-    font-family 'Overpass Mono', monospace
+    height 50vw
+    font 14px var(--mono)
     letter-spacing 1px
-    font-size 14px
-  .orange
-    background-color #f69a56
-  .red
-    background-color #e9664e
-  .purple
-    background-color #6a7ebb
-  .yellow
-    background-color #dac95b
-  .blue
-    background-color #1bacb9
-  .green
-    background-color #459b40
+    padding 50px
+    flex-basis 50%
+    @media $desktop
+      flex-basis 25%
+      height 25vw
+    &.lightgray
+      background-color #f7f7f5
+    &.medgray
+      background-color #999da0
+    &.darkgray
+      color white
+      background-color #36393d
+    &.black
+      color white
+      background-color #000000
+    &.red
+      background-color #ee6757
+    &.orange
+      background-color #f7a96d
+    &.green
+      background-color #86b176

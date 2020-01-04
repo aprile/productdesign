@@ -1,9 +1,9 @@
 .iconset
-  background-color #1d1e22
+  padding 100px
   display flex
   flex-wrap wrap
   justify-content center
-  padding 100px
+  background-color #1d1e22
   @media $desktop-large
     align-items flex-start
   @media $mobile
@@ -25,10 +25,10 @@
   span
     color white
     width 100%
-    text-transform uppercase
-    letter-spacing 1px
     font-size 8px
+    text-transform uppercase
     text-align center
+    letter-spacing 1px
     padding 5px
     display block
     CenterX()
@@ -36,4 +36,8 @@
     visibility hidden
 
   svg
-    Icon(30px, white)
+    height 30px
+    width 30px
+    use
+      fill white
+      color white

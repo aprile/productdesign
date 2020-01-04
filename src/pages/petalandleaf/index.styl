@@ -20,29 +20,27 @@ body#petalandleaf
     text-align center
 
   .colour-grid > *
-    flex-basis 50%
     height 50vw
-    padding 50px
-    font-family 'Overpass Mono', monospace
+    font 14px var(--mono)
     letter-spacing 1px
-    font-size 14px
+    padding 50px
+    flex-basis 50%
     @media $desktop
       flex-basis 25%
       height 25vw
-
-  .red
-    background-color #b55f36
-  .pink
-    background-color #d59fa6
-  .orange
-    background-color #eab636
-  .yellow
-    background-color #e8d628
-  .darkgreen
-    background-color #8d9050
-  .green
-    background-color #c9d345
-  .blue
-    background-color #cdd6ee
-  .purple
-    background-color #8976be
+    &.red
+      background-color #b55f36
+    &.pink
+      background-color #d59fa6
+    &.orange
+      background-color #eab636
+    &.yellow
+      background-color #e8d628
+    &.darkgreen
+      background-color #8d9050
+    &.green
+      background-color #c9d345
+    &.blue
+      background-color #cdd6ee
+    &.purple
+      background-color #8976be

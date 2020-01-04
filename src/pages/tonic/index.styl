@@ -1,30 +1,35 @@
 body#tonic
-  --accent #ee6757
+  --accent #bbcfb0
 
   .intro
     &.left
       background-image url('/images/tonic.png')
 
     &.right
-      background-color #bbcfb0
+      background-color var(--accent)
 
-  .swatchset
-    .swatch
+  .colour-grid > *
+    height 50vw
+    font 14px var(--mono)
+    letter-spacing 1px
+    padding 50px
+    flex-basis 50%
+    @media $desktop
       flex-basis 25%
-
-      &.lightgray span
-        background-color #f7f7f5
-      &.medgray span
-        background-color #999da0
-      &.darkgray span
-        background-color #36393d
-      &.black span
-        background-color #000000
-      &.white span
-        border 1px solid var(--border)
-      &.red span
-        background-color var(--accent)
-      &.orange span
-        background-color #f7a96d
-      &.green span
-        background-color #86b176
+      height 25vw
+    &.lightgray
+      background-color #f7f7f5
+    &.medgray
+      background-color #999da0
+    &.darkgray
+      color white
+      background-color #36393d
+    &.black
+      color white
+      background-color #000000
+    &.red
+      background-color #ee6757
+    &.orange
+      background-color #f7a96d
+    &.green
+      background-color #86b176
