@@ -1,36 +1,51 @@
 body#conductorlab
+  --accent #397ac8
 
   .intro
     &.left
-      background-image url('/images/cl.png')
+      background-image url('/images/conductorlab-1.png')
 
     &.right
-      background-color #dac863
+      background-color var(--accent)
       h1
         font-size 80px !important
 
+  section.image-box
+    padding 100px 50px
+    img
+      width 70%
+      margin 0 auto
+      display block
+    &.dark
+      background-color #35383d
+    &.logo
+      padding 250px 50px
+      background-color var(--accent)
+      img
+        width 40%
+
   .colour-grid > *
-    height 50vw
+    height 260px
     font 14px var(--mono)
     letter-spacing 1px
     padding 50px
     flex-basis 50%
     @media $desktop
       flex-basis 25%
-      height 25vw
-    &.lightgray
-      background-color #f7f7f5
-    &.medgray
-      background-color #999da0
-    &.darkgray
-      color white
-      background-color #36393d
-    &.black
-      color white
-      background-color #000000
-    &.red
-      background-color #ee6757
     &.orange
-      background-color #f7a96d
+      background-color #f69a56
+    &.red
+      background-color #e9664e
+    &.purple
+      background-color #6a7ebb
+    &.yellow
+      background-color #dac95b
+    &.teal
+      background-color #1bacb9
     &.green
-      background-color #86b176
+      background-color #459b40
+    &.gray
+      color white
+      background-color #35383d
+    &.blue
+      background-color var(--accent)

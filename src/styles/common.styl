@@ -106,8 +106,15 @@ body
   .flex
     display flex
     flex-wrap wrap
+    &.space
+      justify-content space-between
     &.center
       justify-content center
+    &.padding > *
+      padding 30px
+
+    .flex-15
+      flex-basis 15%
 
     .flex-25
       flex-basis 25%
