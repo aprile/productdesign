@@ -1,8 +1,13 @@
 include ../../mixins/head
 include ../../mixins/header
-include ../../mixins/footer
 
-+Head('Voltra')
+head
+  +Head('Voltra')
+  
+  meta(property="og:title", content="Voltra")
+  meta(property="og:url", content="https://aprileelcich.com/voltra")
+  meta(property="og:image", content="https://aprileelcich.com/images/voltra_desktop-2.png")
+  meta(name="twitter:image", content="https://aprileelcich.com/images/voltra_desktop-2.png")
 
 body#voltra
   +Header('Voltra')
@@ -466,7 +471,7 @@ body#voltra
       .caption a. Voltra guitar picks
     
 
-    section.page-footer
+    footer
       .wrapper
         a(href="/").prev-project.index
           .bullet
@@ -474,5 +479,3 @@ body#voltra
         a(href="/dataterranemo").next-project.dtn
           .bullet
           p Data Terra<br>Nemo
-    
-  +Footer('Index', '/', 'Data Terra Nemo', '/dataterranemo')

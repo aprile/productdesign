@@ -1,8 +1,24 @@
 mixin Head(title)
-  head
-    meta(name="viewport" content="width=device-width, initial-scale=1")
+  link(rel="stylesheet" href="/css/index.css" type="text/css")    
+  link(href="https://fonts.googleapis.com/css?family=Baskervville:400,400i|Overpass+Mono|Overpass:300,600&display=swap" rel="stylesheet")
 
-    link(rel="stylesheet" href="/css/index.css" type="text/css")    
-    link(href="https://fonts.googleapis.com/css?family=Baskervville:400,400i|Overpass+Mono|Overpass:300,600&display=swap" rel="stylesheet")
+  link(rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32")
+  link(rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96")
+  link(rel="icon" type="image/png" href="/images/favicon-120x120.png" sizes="120x120")
+  link(rel="icon" type="image/png" href="/images/favicon-128x128.png" sizes="128x128")
+    
+  meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  meta(name="description" content="Portfolio of Aprile Elcich.")
 
-    title= title
+  title= title
+
+  meta(property="og:site_name", content="Aprile Elcich")
+  meta(property="og:title", content="Aprile Elcich")
+  meta(property="og:description" content="Portfolio of Aprile Elcich.")
+  meta(property="og:type", content="website")
+  meta(property="og:url", content="https://aprileelcich.com")
+  meta(property="og:image", content="https://aprileelcich.com/images/preview.png")
+  meta(name="twitter:card", content="summary")
+  meta(name="twitter:site", content="@aprileelcich")
+  meta(name="twitter:image", content="https://aprileelcich.com/images/preview.png")

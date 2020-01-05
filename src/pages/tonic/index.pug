@@ -1,8 +1,13 @@
 include ../../mixins/head
 include ../../mixins/header
-include ../../mixins/footer
 
-+Head('Tonic')
+head
+  +Head('Tonic')
+  
+  meta(property="og:title", content="Tonic")
+  meta(property="og:url", content="https://aprileelcich.com/tonic")
+  meta(property="og:image", content="https://aprileelcich.com/images/tonic-0.png")
+  meta(name="twitter:image", content="https://aprileelcich.com/images/tonic-0.png")
 
 body#tonic
   +Header('Tonic')
@@ -36,14 +41,16 @@ body#tonic
     section.copy
       h1 Visual Interface Design
       h2 Logo
-      p tbd
+      p The logo was designed similarly to the framework, to be 
+        |  simplistic, polished, and refined.
         
-      h2 Typography
-      p tbd
-      
     section.copy
       h2 Colour
-      p tbd
+      p The default 
+        i  Tonic
+        |  components are mainly monochromatic, but with a few colours
+        |  to indicate success or failure states and warnings (red, orange, green).
+      
       
     section.flex.colour-grid    
       .lightgray
@@ -143,13 +150,11 @@ body#tonic
           li Website Design &amp; Dev:
           li Aprile Elcich
     
-    section.page-footer
+    footer
       .wrapper
         a(href="/vintagetype").prev-project.vintagetype
           .bullet
           p Vintage<br>Type
         a(href="/conductorlab").next-project.conductorlab
           .bullet
-          p Conductor Lab
-    
-  +Footer('Petal and Leaf', '/petalandleaf', 'Conductor Lab', '/conductorlab')
+          p Conductor<br>Lab

@@ -1,8 +1,13 @@
 include ../../mixins/head
 include ../../mixins/header
-include ../../mixins/footer
 
-+Head('Petal & Leaf')
+head
+  +Head('Petal & Leaf')
+  
+  meta(property="og:title", content="Petal & Leaf")
+  meta(property="og:url", content="https://aprileelcich.com/petalandleaf")
+  meta(property="og:image", content="https://aprileelcich.com/images/petalandleaf-4.png")
+  meta(name="twitter:image", content="https://aprileelcich.com/images/petalandleaf-4.png")
 
 body#petalandleaf
   +Header('Petal & Leaf')
@@ -31,58 +36,58 @@ body#petalandleaf
         ul
           li Amber &amp; Elemi
           li &mdash;
-          li R43 G21 B5
-          li C97 M0 Y24 K18
-          li #EAEAEA
+          li R180 G95 B59
+          li C22 M71 Y88 K10
+          li #B45F3B
       .pink
         ul
           li Rose &amp; Ambrette
           li &mdash;
-          li R43 G21 B5
-          li C97 M0 Y24 K18
-          li #tbdtbd
+          li R213 G159 B166
+          li C15 M41 Y23 K0
+          li #D59FA6
       .orange
         ul
           li Orange Blossom &amp; Jasmine
           li &mdash;
-          li R43 G21 B5
-          li C97 M0 Y24 K18
-          li #tbdtbd
+          li R233 G181 B68
+          li C8 M28 Y92 K0
+          li #E9B544
       .yellow
         ul
           li Bergamot &amp; Vanilla
           li &mdash;
-          li R43 G21 B5
-          li C97 M0 Y24 K18
-          li #tbdtbd
+          li R232 G213 B62
+          li C11 M8 Y95 K0
+          li #E8D53E
       .purple
         ul
           li Ylang &amp; Sandalwood
           li &mdash;
-          li R43 G21 B5
-          li C97 M0 Y24 K18
-          li #EAEAEA
+          li R137 G120 B188
+          li C50 M58 Y0 K0
+          li #8978BC
       .blue
         ul
           li Lavender &amp; Mandarin
           li &mdash;
-          li R43 G21 B5
-          li C97 M0 Y24 K18
-          li #tbdtbd
+          li R206 G215 B237
+          li C17 M11 Y0 K0
+          li #CED7ED
       .green
         ul
           li Narcissus &amp; Neroli
           li &mdash;
-          li R43 G21 B5
-          li C97 M0 Y24 K18
-          li #tbdtbd
+          li R201 G20 B81
+          li C25 M4 Y90 K0
+          li #C9D251
       .darkgreen
         ul
           li Dark Green
           li &mdash;
-          li R43 G21 B5
-          li C97 M0 Y24 K18
-          li #tbdtbd
+          li R141 G143 B84
+          li C46 M32 Y82 K8
+          li #8D8F54
           
     section.copy
       h2 Colour
@@ -199,7 +204,7 @@ body#petalandleaf
             | ,&nbsp;
             a(href="http://lovelypackage.com/petal-leaf/" target="_blank" rel="noopener") Lovely Package
 
-    section.page-footer
+    footer
       .wrapper
         a(href="/vintagetype").prev-project.vintagetype
           .bullet
@@ -207,5 +212,3 @@ body#petalandleaf
         a(href="/tonic").next-project.tonic
           .bullet
           p Tonic
-    
-  +Footer('Vintage Type', '/vintagetype', 'Tonic', '/tonic')

@@ -1,8 +1,13 @@
 include ../../mixins/head
 include ../../mixins/header
-include ../../mixins/footer
 
-+Head('ConductorLab')
+head
+  +Head('ConductorLab')
+  
+  meta(property="og:title", content="ConductorLab")
+  meta(property="og:url", content="https://aprileelcich.com/conductorlab")
+  meta(property="og:image", content="https://aprileelcich.com/images/conductorlab-1.png")
+  meta(name="twitter:image", content="https://aprileelcich.com/images/conductorlab-1.png")
 
 body#conductorlab
   +Header('ConductorLab')
@@ -235,7 +240,7 @@ body#conductorlab
     
     hr.spacer
 
-    section.page-footer
+    footer
       .wrapper
         a(href="/tonic").prev-project.tonic
           .bullet
@@ -243,5 +248,3 @@ body#conductorlab
         a(href="/maisonapothecare").next-project.maisonapothecare
           .bullet
           p Maison<br>Apothecare
-          
-  +Footer('Tonic', '/tonic', 'Maison Apothecare', '/maisonapothecare')

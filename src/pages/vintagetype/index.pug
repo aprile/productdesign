@@ -1,8 +1,13 @@
 include ../../mixins/head
 include ../../mixins/header
-include ../../mixins/footer
 
-+Head('Vintage Type')
+head
+  +Head('Vintage Type')
+  
+  meta(property="og:title", content="Vintage Type")
+  meta(property="og:url", content="https://aprileelcich.com/vintagetype")
+  meta(property="og:image", content="https://aprileelcich.com/images/vintagetype-5.png")
+  meta(name="twitter:image", content="https://aprileelcich.com/images/vintagetype-5.png")
 
 body#vintagetype
   +Header('Vintage Type')
@@ -42,7 +47,7 @@ body#vintagetype
           li Fonts:
           li Oswald, Krona One, Cardo, Raleway, Herr Von Muellerhoff, Sacramento.
 
-    section.page-footer
+    footer
       .wrapper
         a(href="/islandjoy").prev-project.islandjoy
           .bullet
@@ -50,5 +55,3 @@ body#vintagetype
         a(href="/petalandleaf").next-project.petalandleaf
           .bullet
           p Petal &amp;<br>Leaf
-    
-  +Footer('Island Joy', '/islandjoy', 'Petal & Leaf', '/petalandleaf')

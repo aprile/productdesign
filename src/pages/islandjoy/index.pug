@@ -1,8 +1,13 @@
 include ../../mixins/head
 include ../../mixins/header
-include ../../mixins/footer
 
-+Head('Island Joy')
+head
+  +Head('Island Joy')
+
+  meta(property="og:title", content="Island Joy")
+  meta(property="og:url", content="https://aprileelcich.com/islandjoy")
+  meta(property="og:image", content="https://aprileelcich.com/images/islandjoy-10.png")
+  meta(name="twitter:image", content="https://aprileelcich.com/images/islandjoy-10.png")
 
 body#islandjoy
   +Header('Island Joy')
@@ -164,7 +169,7 @@ body#islandjoy
           li Photography:
           li Lunch Money Studios
 
-    section.page-footer
+    footer
       .wrapper
         a(href="/dataterranemo").prev-project.dtn
           .bullet
@@ -172,5 +177,3 @@ body#islandjoy
         a(href="/vintagetype").next-project.vintagetype
           .bullet
           p Vintage<br>Type
-          
-  +Footer('Data Terra Nemo', '/dataterranemo', 'Vintage Type', '/vintagetype')

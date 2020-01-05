@@ -1,8 +1,13 @@
 include ../../mixins/head
 include ../../mixins/header
-include ../../mixins/footer
 
-+Head('Data Terra Nemo')
+head
+  +Head('Data Terra Nemo')
+  
+  meta(property="og:title", content="Data Terra Nemo")
+  meta(property="og:url", content="https://aprileelcich.com/dataterranemo")
+  meta(property="og:image", content="https://aprileelcich.com/images/dtn-0.png")
+  meta(name="twitter:image", content="https://aprileelcich.com/images/dtn-0.png")
 
 body#dtn
   +Header('Data Terra Nemo')
@@ -118,7 +123,7 @@ body#dtn
           li Event Coordinators:
           li Aprile Elcich &amp; Paolo Fragomeni
           
-    section.page-footer
+    footer
       .wrapper
         a(href="/voltra").prev-project.voltra
           .bullet
@@ -126,6 +131,3 @@ body#dtn
         a(href="/islandjoy").next-project.islandjoy
           .bullet
           p Island<br>Joy
-      
-
-  +Footer('Voltra', '/voltra', 'Island Joy', '/islandjoy')
