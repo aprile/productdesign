@@ -1,4 +1,15 @@
 body#index
+  &.loading
+    header span
+      transform translateY(0%)
+
+  header > h1 div
+    overflow hidden
+
+    span
+      display block
+      transition transform 0.6s ease 0.2s
+      transform translateY(100%)
 
   header
     color white

@@ -1,13 +1,19 @@
 include ../mixins/head
+include ../mixins/script
 
 head
   +Head('Aprile Elcich')
 
-body#index
+body#index  
   header
-    h1 Aprile Elcich is a 
-      i digital product designer
-      |  based in Amsterdam.
+    h1 
+      div
+        span Aprile Elcich is a 
+      div
+        span 
+          i digital product designer
+      div
+        span based in Amsterdam.
     
     input#info(type="checkbox" name="info")
     label.read-more(for="info") Read More
@@ -74,7 +80,9 @@ body#index
     
       label.read-less(for="info") Read Less
 
-    h1 Selected Work &mdash;
+    h1
+      div
+        span Selected Work &mdash;
 
   main.flex
     section.voltra
@@ -116,3 +124,6 @@ body#index
       a(href="/maisonapothecare")
         h1 Maison<br>Apothecare
         img(src="/images/ma-1.png")
+
+footer
+  +Script()

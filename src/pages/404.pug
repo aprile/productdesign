@@ -1,0 +1,15 @@
+include ../mixins/head
+include ../mixins/header
+
+head
+  +Head('Aprile Elcich')
+  
+body#notfound
+  +Header('404')
+
+  header
+    main
+      section
+        h1 Sorry, page not found.
+        a(href="/") Index
+    
